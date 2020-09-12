@@ -1,0 +1,5 @@
+/frontend/node_models
+db.sqlite3
+db.sqlite3-journal
+docs.md
+/pictures
