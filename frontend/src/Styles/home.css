@@ -1,0 +1,39 @@
+body{
+	
+}
+
+
+.elements{
+	display: grid;
+}
+
+.element{
+
+  min-height: 250px;
+}
+
+.articles{
+
+}
+
+.activities{
+
+}
+
+.my-image{
+	height: 100%;
+	width: 100%;
+}
+
+.aboutme{
+
+}
+.hello-alert{
+	text-align: center;
+	box-shadow: 1px 5px 5px green;
+	padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: blue;
+	
+}
