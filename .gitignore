@@ -4,5 +4,4 @@ db.sqlite3
 db.sqlite3-journal
 docs.md
 /pictures
-/*/migrations
 .env
