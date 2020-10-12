@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import {fetchPost} from '../service/blogAPI';
 import Loader from '../Components/Loader'
+import { Helmet } from 'react-helmet';
 
 const PostItem = ({ match }) =>{
 	const id = match.params.id;
@@ -14,10 +15,13 @@ const PostItem = ({ match }) =>{
 		} catch(e) {
 			console.log(e);
 		}
-	}, []);
+	}, [id]);
 
 	return(
        <div>
+        <Helmet>
+               <title>najmi-imad.com| Post Details</title>
+            </Helmet>
        <section>
           { !loading && <Loader /> }
         </section>

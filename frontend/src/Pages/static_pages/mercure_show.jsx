@@ -1,23 +1,18 @@
+import { Helmet } from 'react-helmet';
 import React from 'react';
+
+import content from '../../Components/blog/posts/mercure_symfony.md';
+import MarkDown from '../../Components/blog/markdown-parser/MarkDown';
+
 
 const Mercure = () =>{
 	return(
-		<article>
-		  <div>
-		      <h1> </h1>
-		      <h3> </h3>
-		  </div>
-		  <div>
-		     <img src= '' />
-		  </div>
-		  <div>
-		     <h5> </h5>
-		     <p> </p>
-		  </div>
-		  <div>
-		    
-		  </div>
-		</article>
+		 <div className="main">
+		  <Helmet>
+               <title>najmi-imad.com| Using Mercure in Symfony and Api Platform</title>
+            </Helmet>
+        	<MarkDown content={content} />
+        </div>
     );
 }
 export default Mercure;

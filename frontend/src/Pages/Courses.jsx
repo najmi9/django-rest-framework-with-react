@@ -1,26 +1,58 @@
 import React, { useState, useEffect } from 'react';
-import {fetchCourses } from '../service/courseAPI';
-import CourseItem from '../Components/course_item';
+import {fetchCourses } from '../service/data';
+//import CourseItem from '../Components/course_item';
+import { Link  } from 'react-router-dom';
+import Media from '../Components/course/media';
+import FinalPage from '../Components/FinalPage';
 
 const Courses = () => {
 	const [courses, setCourses] = useState([]);
 	const [loading, setLoading] = useState(false);
+  const [error, setError] = useState({});
 	useEffect(()=>{
 		fetchCourses().then(response=>{
 			setCourses(response)
 			setLoading(true)
-		}).catch(e=>console.log(e))
+		}).catch(e=>{
+      setError(e)
+      console.log(e)
+    })
 	}, []);
+
+  const Component = () =>{
     return (
         <div>
-         <section>
-          { !loading && (  <spinning-dots style={{"width":200+"px", "strokeWidth":20+"px", "color": "#535FF6"}} dots="8">
-   </spinning-dots>) }
-        </section>
-        <section>
-          { loading && (<div> {courses.map(course=>(<CourseItem course={course} />))} </div>)  }
-        </section>
+           {courses.map(course=>(
+            <div className="course">
+
+              <Link to={"/courses-"+course.slug}>
+              <h1> {course.title} </h1>
+                  <Media isVideo={course.is_video} 
+                     title={course.title}  
+                     media={course.media}
+                     width={300}
+                     height = {300} 
+                  />
+              </Link>
+              <div>
+                  {course.objectifs}
+                     <p> lorem ipsum dolor sit</p>
+                     <p> lorem ipsum dolor sit</p>
+                     <p> lorem ipsum dolor sit</p>
+              </div>
+            </div>
+            ))}
         </div>
+    );
+}
+
+    return (
+        <FinalPage
+           title='courses'
+           loading={loading}
+           error={error}
+           Component={Component}
+        />
     );
 };
 

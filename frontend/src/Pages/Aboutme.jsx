@@ -3,28 +3,22 @@ import { Helmet } from 'react-helmet';
 
 const Aboutme = ({history}) => {
 
-     function back() {
-       history.goBack()
-     }
-
-     function forward() {
-      history.goForward()
-     }
 
     return(<div className="container bg-light border">
             <Helmet>
-               <title>This is the About me  Page title!</title>
+               <title>najmi-imad.com| About me</title>
             </Helmet>
+
         <h1> my Name is Imad Najmi ! </h1>
         <div>
-          <img src="../imgs/najmi.jpg" width="200px" height="200px" />
+          <img src="/imgs/najmi.jpg" width="200px" height="200px" alt="imad najmi"/>
         </div>
         <h5>Email: imadnajmi9@gmail.com   </h5>
         <h5>Tel: +212 07 62 95 17 42  </h5>
         <h5>Adress: Morroco marakech Chichaoua  </h5>
         <h5>Age: 22/03/1999  </h5>
-        <h5>I am a Web Developper and I have a 
-        physics degree at 2019</h5>
+        <h5> I have a physics degree at 2019 </h5>
+        <h5>I am freelancer in Web Developpement </h5>
         <h5>Now I am Student at Cady Ayyad University in Marrakech </h5>
         <h5> I deal with those technologies :</h5>
         <ul>
@@ -51,7 +45,7 @@ const Aboutme = ({history}) => {
       </p>
       <p> <a href="https://shopping-najmi.herokuapp.com">link here </a> </p>
       <p>
-        <img src="./imgs/shopping.png" width="200px" height="350px" />
+        <img src="./imgs/shopping.png" width="200px" height="350px" alt="shopping-website" />
       </p>
       <h4> Used Technologies </h4>
      
@@ -77,7 +71,7 @@ const Aboutme = ({history}) => {
       </p>
       <p> <a href="https://najmi-accademy.herokuapp.com">link here </a> </p>
       <p>
-        <img src="../imgs/accademy.png" width="400px" height="200px" />
+        <img src="../imgs/accademy.png" width="400px" height="200px" alt="shopping-website"/>
       </p>
       <h4> Used Technologies </h4>
       
@@ -98,13 +92,13 @@ const Aboutme = ({history}) => {
     </div>
     <div className="text-center">
         <button className="btn btn-outline-primary"
-         onClick={back}
+         onClick={history.goBack}
          >
           {'<--Back'}
           </button>
 
            <button className="btn btn-outline-primary"
-         onClick={forward}
+         onClick={history.goForward}
          >
           {'Forward-->'}
           </button>

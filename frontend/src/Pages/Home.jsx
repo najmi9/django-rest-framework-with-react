@@ -1,14 +1,30 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/home.css'
-import Loader from '../Components/Loader';
+import { Helmet } from 'react-helmet';
 
+//import Svg from '../Components/svg';
 const Home = () => {
 
 
     return (
        <div>
-           <h1 className="hello-alert"> Hi, My Name is IMAD and Welome To My Blog 😃 ! </h1>
+        <Helmet>
+               <title>najmi-imad.com| Home</title>
+            </Helmet>
+         <div className="header2">
+            <div >
+                <img src="/imgs/imad.jpg" alt="Imad Najmi" className="my-img" />
+            </div>
+            <h2>
+               Imad Najmi
+               Freelancer
+            </h2>
+
+         </div>
+
+           <h1 className="hello-alert"> Hi, My Name is IMAD and Welome To My Blog
+           <span role="img" aria-label="Hhhh"> 😃 </span>! </h1>
            
            <div className="elements">
             <div className="card element articles">

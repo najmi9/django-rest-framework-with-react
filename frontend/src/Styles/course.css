@@ -1,0 +1,48 @@
+.course-body{
+	display: grid;
+	grid-template-columns: 2fr 6fr;  
+}
+
+.course-template{
+	margin: 5px;
+	border: 1px solid gray;
+	padding: 5px;
+}
+.course_head{
+	border-bottom: 2px solid gray;
+	margin: 5px;
+	padding: 2px;
+}
+.chapters{
+	margin-top: 40px;
+}
+
+.chapter-view{
+	padding-left: 15px;
+	
+}
+
+.chapter-detail{
+  border: 1px solid black;
+  background-color: gray;
+  padding: 2px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  padding-top:7px;
+  padding-bottom: 7px;
+
+}
+
+.currentChap{
+	background-color: white;
+}
+
+.chapter-detail:hover{
+   cursor: pointer;
+   background-color: darkgray;
+   transform: scale(1.01);
+   transition: 0.5s;
+}
+
+
+

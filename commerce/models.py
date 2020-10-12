@@ -1,5 +1,5 @@
 from django.db import models
-from trainingapp.settings import AUTH_USER_MODEL as User
+from accounts.models import User
 
 class TimeStamp(models.Model):
 	createdAt = models.DateTimeField(auto_now_add=True)
@@ -8,22 +8,30 @@ class TimeStamp(models.Model):
 		abstract = True
 
 class Course(TimeStamp):
+	slug = models.CharField(unique=True, max_length=255, blank=False, null=False)
 	title = models.CharField(max_length=255, blank=False, null=False)
 	description = models.TextField()
-	image = models.ImageField(upload_to='pictures/%Y/%m/%d/', max_length=255, null=False, blank=False)
-	user=models.ForeignKey(User, on_delete=models.CASCADE)
-
+	media = models.FileField(upload_to='courses/cover', max_length=255, null=False, blank=False)
+	author=models.ForeignKey(User, on_delete=models.CASCADE)
+	objectifs = models.TextField()
+	is_video = models.BooleanField(default=False)
 	def __str__(self):
 		return self.title
 
 class Chapter(TimeStamp):
+	is_video = models.BooleanField(default=False)
 	title = models.CharField(max_length=255, blank=False, null=False)
+	media = models.FileField(upload_to='courses/chapters', max_length=255, null=False, blank=False)
 	introduction = models.TextField()
-	user=models.ForeignKey(User, on_delete=models.CASCADE)
+	author=models.ForeignKey(User, on_delete=models.CASCADE)
 	body = models.TextField(blank=False, null=False)
 	course = models.ForeignKey(Course, on_delete=models.CASCADE)
 	def __str__(self):
 		return self.title
+
+class Media(TimeStamp):
+	video = models.FileField(upload_to="courses/videos")
+	image = models.ImageField(upload_to="courses/courses")
 
 
 class Category(TimeStamp):

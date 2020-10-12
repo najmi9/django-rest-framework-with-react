@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { fetchPosts } from '../service/blogAPI';
+//import { fetchPosts } from '../service/blogAPI';
 import PostItem from '../Components/post_item';
+import { Helmet } from 'react-helmet';
 
 import AsideBar from '../Components/AsideBar';
 
 const Blog = ({history}) =>{
-	const [posts, setPosts] = useState([]);
+	//const [posts, setPosts] = useState([]);
 	const [loading, setLoading] = useState(false);
 	useEffect(()=>{
   setLoading(true)
@@ -19,6 +20,9 @@ const Blog = ({history}) =>{
 
 	return(
         <div>
+         <Helmet>
+               <title>najmi-imad.com| My Blog</title>
+            </Helmet>
          
           { !loading && (<section>
              <spinning-dots style={{"width":200+"px", "strokeWidth":20+"px", "color": "#535FF6"}} dots="8">
@@ -29,7 +33,7 @@ const Blog = ({history}) =>{
         
     
           { loading && (<section>
-              { posts.map(post=>(<PostItem post={post} />)) }
+              { [].map(post=>(<PostItem post={post} />)) }
               <AsideBar />
             </section>) 
           }

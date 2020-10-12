@@ -43,10 +43,14 @@ def generate_jwt_token():
 
 @api_view(['GET', 'POST'])
 def regisetr(request):
+	if request.method == 'GET':
+		return Response('oh')
+
+
 	data=request.data
 	password= make_password(data['password'])
 
-	serializer=RegisterSerializer(data={"password":password, "email":data['email'], "username":data['username']})
+	serializer=RegisterSerializer(data={"password":password, "email":data['email']})
 	token = generate_jwt_token()
 	serializer.is_valid(raise_exception=True)
 	user = serializer.save(token=token)

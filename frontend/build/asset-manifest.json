@@ -1,22 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.0aae868d.chunk.css",
-    "main.js": "/static/js/main.54a1901c.chunk.js",
-    "main.js.map": "/static/js/main.54a1901c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c8a21426.js.map",
-    "static/js/2.354a1739.chunk.js": "/static/js/2.354a1739.chunk.js",
-    "static/js/2.354a1739.chunk.js.map": "/static/js/2.354a1739.chunk.js.map",
+    "main.css": "/static/css/main.bc0f9401.chunk.css",
+    "main.js": "/static/js/main.c506d27b.chunk.js",
+    "main.js.map": "/static/js/main.c506d27b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d0e754e5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d0e754e5.js.map",
+    "static/css/2.d34346ea.chunk.css": "/static/css/2.d34346ea.chunk.css",
+    "static/js/2.dbd0ca47.chunk.js": "/static/js/2.dbd0ca47.chunk.js",
+    "static/js/2.dbd0ca47.chunk.js.map": "/static/js/2.dbd0ca47.chunk.js.map",
+    "static/js/3.675a26be.chunk.js": "/static/js/3.675a26be.chunk.js",
+    "static/js/3.675a26be.chunk.js.map": "/static/js/3.675a26be.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5a2f42c888d6ca5022abfc9714948f74.js": "/precache-manifest.5a2f42c888d6ca5022abfc9714948f74.js",
+    "precache-manifest.566470d8a15aa705fc634af9b1a357f1.js": "/precache-manifest.566470d8a15aa705fc634af9b1a357f1.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0aae868d.chunk.css.map": "/static/css/main.0aae868d.chunk.css.map",
-    "static/js/2.354a1739.chunk.js.LICENSE.txt": "/static/js/2.354a1739.chunk.js.LICENSE.txt"
+    "static/css/2.d34346ea.chunk.css.map": "/static/css/2.d34346ea.chunk.css.map",
+    "static/css/main.bc0f9401.chunk.css.map": "/static/css/main.bc0f9401.chunk.css.map",
+    "static/js/2.dbd0ca47.chunk.js.LICENSE.txt": "/static/js/2.dbd0ca47.chunk.js.LICENSE.txt",
+    "static/media/django_api.md": "/static/media/django_api.270fdf0f.md",
+    "static/media/fc_automate_post.md": "/static/media/fc_automate_post.5ef476c7.md",
+    "static/media/math_for_developers.md": "/static/media/math_for_developers.de703503.md",
+    "static/media/mercure_symfony.md": "/static/media/mercure_symfony.0a8b7cf3.md",
+    "static/media/node_express_sequelize.md": "/static/media/node_express_sequelize.ad1277e5.md",
+    "static/media/react_blog.md": "/static/media/react_blog.242c7ce1.md",
+    "static/media/react_symfony.md": "/static/media/react_symfony.7399279c.md",
+    "static/media/ssh.md": "/static/media/ssh.eb799a21.md",
+    "static/media/web_scraping.md": "/static/media/web_scraping.51c09c7b.md"
   },
   "entrypoints": [
-    "static/js/runtime-main.c8a21426.js",
-    "static/js/2.354a1739.chunk.js",
-    "static/css/main.0aae868d.chunk.css",
-    "static/js/main.54a1901c.chunk.js"
+    "static/js/runtime-main.d0e754e5.js",
+    "static/css/2.d34346ea.chunk.css",
+    "static/js/2.dbd0ca47.chunk.js",
+    "static/css/main.bc0f9401.chunk.css",
+    "static/js/main.c506d27b.chunk.js"
   ]
 }

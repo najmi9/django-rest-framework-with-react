@@ -1,9 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Contact from './contact';
+
 const Footer = () => {
+
     return (
 
 <footer>
+
+
+
+<div className="contact">
+   <div> <i className="fas fa-phone"></i> :+212 07 62 95 17 42 </div>
+   <div><i className="fas fa-envlope"></i> : imadnajmi9@gmail.com</div>
+   <Contact />
+</div>
+
 
   <div className="">
 
