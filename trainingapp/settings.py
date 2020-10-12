@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'sif&50n8#v-2y)v#gyp0yaopb*+a@p&@9q!9n5n5rp^8+2y(k1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://imad-najmi.herokuapp.com']
 
 
 # Application definition

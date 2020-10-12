@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CourseTemplate from '../Components/course/CourseTemplate';
-import { fetchCourse, fetchChaptersForCourse } from '../service/data';
+import { fetchCourse, fetchChaptersForCourse } from '../service/courseAPI';
 import FinalPage from '../Components/FinalPage';
 
 const Course = ({ match }) => {

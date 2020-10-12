@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {fetchCourses } from '../service/data';
+import {fetchCourses } from '../service/courseAPI';
 //import CourseItem from '../Components/course_item';
 import { Link  } from 'react-router-dom';
 import Media from '../Components/course/media';

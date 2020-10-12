@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fecthChapter } from '../../service/data';
+import { fecthChapter } from '../../service/courseAPI';
 import Media from './media';
 //import toast from 'react-toastify';
 import FinalPage from '../FinalPage';
