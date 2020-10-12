@@ -40,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engine":{
+    "node":"13.14.0",
+    "yarn":"1.22.5"
   }
 }
