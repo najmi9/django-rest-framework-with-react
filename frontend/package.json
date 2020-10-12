@@ -2,6 +2,10 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "engine":{
+    "node":"13.14.0",
+    "yarn":"1.22.5"
+  },
   "dependencies": {
     "@grafikart/spinning-dots-element": "^1.1.0",
     "@testing-library/jest-dom": "^4.2.4",
