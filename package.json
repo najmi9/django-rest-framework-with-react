@@ -24,13 +24,11 @@
     "react-toastify": "^6.0.8"
   },
   "scripts": {
-<<<<<<< HEAD
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-prebuild": "npm install && npm run build "
-=======
     "heroku-prebuild": "cd frontend/"
   },
   "eslintConfig": {
@@ -50,6 +48,5 @@
   "engine":{
     "node":"13.14.0",
     "npm":"6.14.7"
->>>>>>> 59a831dfcb14f4f1348a6fb49cb66d0242ba0683
   }
 }
