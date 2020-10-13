@@ -2,34 +2,32 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "engine":{
+    "node":"13.14.0",
+    "npm":"6.14.7"
+  },
   "dependencies": {
+    "@grafikart/spinning-dots-element": "^1.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+    "jwt-decode": "^3.0.0-beta.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-loadable": "^5.5.0",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-syntax-highlighter": "^13.5.3",
+    "react-toastify": "^6.0.8"
   },
   "scripts": {
-<<<<<<< HEAD
-=======
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
->>>>>>> 9ac9cb4805cf2e4c11c4afc603c81c29d47a0e7c
-    "heroku-prebuild": "cd frontend/"
-  },
-  "eslintConfig": {
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "engine":{
-    "node":"13.14.0",
-    "npm":"6.14.7"
+    "heroku-prebuild": "npm install && npm run build "
   }
 }
