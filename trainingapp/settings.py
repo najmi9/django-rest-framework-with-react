@@ -30,7 +30,6 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'commerce.apps.CommerceConfig',
-    'relationship.apps.RelationshipConfig',
     'rest_framework',
     'corsheaders',
     'rest_framework.authtoken',
