@@ -14,7 +14,7 @@ SECRET_KEY = 'sif&50n8#v-2y)v#gyp0yaopb*+a@p&@9q!9n5n5rp^8+2y(k1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://imad-najmi.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'imad-najmi.herokuapp.com']
 
 
 # Application definition
@@ -34,8 +34,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework.authtoken',
     'accounts.apps.AccountsConfig',
-    'frontend',
-
 ]
 
 MIDDLEWARE = [
@@ -59,7 +57,7 @@ ROOT_URLCONF = 'trainingapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend/build')],
+        'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,12 +122,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, 'frontend/build/static'),
+    os.path.join(BASE_DIR, 'build/static'),
     os.path.join(BASE_DIR, 'courses')
 ]
 
 MEDIA_URL='/media/'
-MEDIA_ROOT=os.path.join(BASE_DIR, 'frontend/build/static')
+MEDIA_ROOT=os.path.join(BASE_DIR, 'build/static')
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
