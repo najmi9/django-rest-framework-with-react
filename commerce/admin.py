@@ -5,4 +5,3 @@ admin.site.register(Course)
 admin.site.register(Chapter)
 admin.site.register(Category)
 admin.site.register(Comment)
-
