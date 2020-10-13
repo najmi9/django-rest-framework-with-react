@@ -24,10 +24,32 @@
     "react-toastify": "^6.0.8"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku-prebuild": "npm install && npm run build "
+=======
+    "heroku-prebuild": "cd frontend/"
+  },
+  "eslintConfig": {
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engine":{
+    "node":"13.14.0",
+    "npm":"6.14.7"
+>>>>>>> 59a831dfcb14f4f1348a6fb49cb66d0242ba0683
   }
 }
