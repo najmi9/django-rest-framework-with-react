@@ -5,6 +5,13 @@
   "dependencies": {
   },
   "scripts": {
+<<<<<<< HEAD
+=======
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+>>>>>>> 9ac9cb4805cf2e4c11c4afc603c81c29d47a0e7c
     "heroku-prebuild": "cd frontend/"
   },
   "eslintConfig": {
