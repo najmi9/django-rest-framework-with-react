@@ -35,9 +35,7 @@ const MarkDown = ({content}) => {
                 source={markdown}
                 skipHtml={false}
                 escapeHtml={false}
-                renderers={{ code: CodeBlock }}
-                
-               
+                renderers={{ code: CodeBlock }}   
                 />
             </div>
          )}

@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import {authenticate} from '../service/AuthAPI';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
@@ -13,10 +13,10 @@ const Login = ({ history}) => {
  const [loading, setLoading] =useState(false);
  const [error, setError] = useState({});
 
-  const handleChange = useCallback(({ currentTarget })=>{
+  const handleChange = ({ currentTarget })=>{
     const {name, value } = currentTarget;
     setCredentials({...credentials, [name]: value})
-  }, [loading]); 
+  }; 
 
 
      const handleSubmit =async  e =>{
@@ -31,7 +31,7 @@ const Login = ({ history}) => {
       setError(error)
     }
   }
-  const Component = () =>(<div className="bg-light container p-4 mt-4" id="login-desktop">
+  return (<div className="bg-light container p-4 mt-4" id="login-desktop">
       <h5 className="text-center text-success m-3"> Connexion au site</h5>
       <div className="bg-light text-center m-2">
         <form onSubmit={handleSubmit}>
@@ -60,25 +60,18 @@ const Login = ({ history}) => {
           </div>
         </div>
          <button type="submit" 
-          className="btn btn-primary"> Connexion ! 
+          className="btn btn-primary"> login  ! 
           </button>
 
         </form>
          <div className="m-3">
         <Link to="/reset-password" className="btn">
-         J'ai oublié le mot de passe ?
+         I forget my passsword?
           </Link>
 
         </div>
       </div>
   </div>);
-
-  return (<FinalPage 
-          title="Login Page"
-          loading={loading}
-          error={error}
-          Component={Component}
-        />);
 }
 
 

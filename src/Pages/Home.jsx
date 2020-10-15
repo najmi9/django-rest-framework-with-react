@@ -1,63 +1,58 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../Styles/all.css';
+
 import '../Styles/home.css'
+import '../Styles/mobile.css'
+import '../Styles/box-fire.css'
 import { Helmet } from 'react-helmet';
 
 //import Svg from '../Components/svg';
-const Home = () => {
-
-
-    return (
-       <div>
-        <Helmet>
-               <title>najmi-imad.com| Home</title>
-            </Helmet>
-         <div className="header2">
-            <div >
-                <img src="/imgs/imad.jpg" alt="Imad Najmi" className="my-img" />
-            </div>
-            <h2>
-               Imad Najmi
-               Freelancer
-            </h2>
-
-         </div>
-
-           <h1 className="hello-alert"> Hi, My Name is IMAD and Welome To My Blog
-           <span role="img" aria-label="Hhhh"> 😃 </span>! </h1>
-           
-           <div className="elements">
-            <div className="card element articles">
-            	<div className="card-title text-center">
-              		<Link to="/blog"><h3> My Articles </h3> </Link>
-                </div>
-                <div className="card-body">
-                  Most of time, I write articles and posts about different things in  
-                  web developpment, I talk about some technologies like PHP, Python, 
-                  Node JS and  how to use them.
-                </div>
-            </div>
-
-            <div className="card element activities">
-              <div className="card-title text-center">
-              	<Link to="/activities"><h3> Activities </h3></Link>
-              </div>
-              <div className="card-body">
-                New projects, challanges, articles and videos !
-              </div>
-            </div>
-
-            <div className="card element aboutme">
-             <div className="card-title text-center">
-               <Link to="about-me"><h3> Who I am ? </h3> </Link>
-             </div>
-             <div className="card-body text-center">
-               <img src="imgs/imad.jpg" alt="imad najmi" className="my-image" />
-             </div>
-           </div>
+const Home = () => {  
+    return (<main>
+      <div className="main-container">
+      <Helmet>
+        <title>najmi-imad.com| Home</title>
+      </Helmet>
+     <div className="card2" style={{"position": "relative"}}>
+       <div className="div-image">
+         <img src="imgs/imad.jpg" className="my-image" />
+       </div>
+       <div className="my-description">
+         <h3>Hi,</h3>
+         <p>I'm Imad Najmi, I'm Web Developer, I am specialized in PHP, Symfony, Javascript, React and Python technologies.
+        </p>
+        <p>I am always learning more about my field to both stay current and to expand on my skills. </p>
+        <button className="btn">
+          more about me
+        </button>    
+       </div>
+     </div>
+       <div className="card1">
+          <h3 className="artices">Recent Articles : </h3>
+           <div className="post">
+            <Link to="/">
+          How to Create a Technical Blog by using React, Markdown and Syntax Highlighter Code ?</Link>
         </div>
-    </div> 
-    );
+        <div className="post">
+           <Link to="/">Implementation of Mercure Protocol With Symfony and Api Platform bundle</Link>
+        </div>
+        <div className="post">
+          <Link to="/">Create posts automatically on Facebook with Selenium and Python</Link>
+        </div>
+        <div style={{"position": "relative"}}>
+          <button className="btn">
+            more articles...
+          </button>
+        </div>
+      </div>
+       <div class="contact">
+    <button id="btn">
+       contact
+    </button>
+   </div>
+   </div>
+    </main>);
 };
 
 export default Home;

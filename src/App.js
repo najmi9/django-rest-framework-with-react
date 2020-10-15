@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Home from './Pages/Home';
 import Aboutme from './Pages/Aboutme';
 import PostDetails from './Pages/PostDetails';
@@ -15,8 +15,6 @@ import {
   Route,
 } from "react-router-dom";
 import Header from './Components/Header';
-import './Styles/header.css';
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { setup } from './service/AuthAPI';

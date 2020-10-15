@@ -15,19 +15,19 @@ const FinalPage = ({title, loading, error, Component }) => {
       if (error.request) {
         toast.error('Network Error : ' + error.message);
         setErr(true);
-      }else if (error.status == 500) {
+      }else if (error.status === 500) {
         setErr(true);
         toast.error("Ooops! We are sorry, It's our bad!, an unexpected error happened !");
-      }else if (error.status == 401) {
+      }else if (error.status === 401) {
         toast.error("Unthorized Request" + error.message);
         Redirect('/login');
-      }else if (error.status == 403) {
+      }else if (error.status === 403) {
         toast.error('Forbidden !' + error.message);
         Redirect('/login');
-      }if (error.status == 400) {
+      }if (error.status === 400) {
            toast.error('Bad Request : ' + error.message)
            console.log(error.response);
-      } else if (error.status == 404) {
+      } else if (error.status === 404) {
         toast.error('Sorry ! requested resource Not Found ): 404');
       }
     	

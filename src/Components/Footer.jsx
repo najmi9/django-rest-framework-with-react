@@ -1,44 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Contact from './contact';
-
+import '../Styles/footer.css';
 const Footer = () => {
 
     return (
-
-<footer>
-
-
-
-<div className="contact">
-   <div> <i className="fas fa-phone"></i> :+212 07 62 95 17 42 </div>
-   <div><i className="fas fa-envlope"></i> : imadnajmi9@gmail.com</div>
-   <Contact />
-</div>
-
-
-  <div className="">
-
-    <ul className="">
-      <li className="">
-        <h5 className="">Register for free</h5>
-      </li>
-      <li className="m">
-        <a href="#!" className="btn btn-outline-success">Sign up!</a>
-      </li>
-      <li>
-          <Link to="github"> Github </Link>
-          <Link to="youtube"> Youtube </Link>
-      </li>
-    </ul>
-  </div>
- 
-  <div className="footer-copyright text-center">© 2020 Copyright:
-    All Rightd Reserved
-  </div>
-
-
-</footer>
+ <footer>
+      <div className="footer-main">
+       <div className="" style={{'justifySelf': 'center'}}>
+          <Link to="" title="Facebook"><i className="fab fa-facebook"></i></Link>
+          <Link to="" title="Github"> <i className="fab fa-github"></i></Link>
+          <Link to="" title="Youtube"> <i className="fab fa-youtube"></i></Link>
+          <Link to="" title="Linked-in"> <i className="fab fa-linkedin"></i></Link>
+        </div>
+        <div style={{'justifySelf': 'center'}}>
+          <p><i className="fas fa-phone-volume"></i> +212 07 62 95 17 42</p>
+          <p><i className="fas fa-envelope"></i> imadnajmi9@gmail.com</p>
+        </div>
+      </div>
+      <div className="Copyrights fire">
+        © 2020 Copyright: All Rightd Reserved
+      </div>
+    </footer>
     );
 };
 
