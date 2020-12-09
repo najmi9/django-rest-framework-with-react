@@ -1,36 +1,11 @@
-@media (max-width: 1200px){
-div.main-container{
-   width: 100%;
-   display: grid;
-   grid-template-columns: 1fr; 
-   grid-column-gap: 10px;
-   margin-bottom: 50px;
-}	
-div.container{
-  margin: 0 20rem;
-}
+@media (max-width: 1200px){	
+
 }
 
 @media(min-width: 1100px) and (min-width: 570px){
-	div.container{
-		margin:0 5rem;
-	}
+	
 }
 
 @media (max-width: 570px){
-	div.container{
-  margin: 0 1rem;
-}
-	div.div-image{
-	margin-top: 10px;
-	text-align: center;
-}
-div.card2{
-	width: 100%;
-	display: grid;
-	 grid-template-columns: 1fr; 
-	 color: #00FFFF;
-	 justify-content: center;
-	 align-items: center;
-}
+
 }
