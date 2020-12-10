@@ -44,7 +44,13 @@ const Aboutme = ({history}) => {
         </p>
       <br />
       <time datetime="2016-1-1" className="has-text-primary">11:09 PM - 1 Mar 2020</time>
+       <div className="box has-background-dark has-text-light">
+             <i className="fas fa-language has-text-danger-dark"></i> 
+             I speak  Arabic, Frensh and English 
+              </div>
     </div>
+            <div className="box has-background-dark has-text-light"><i className="fas fa-university has-text-success-dark"></i> University of Cady Ayyad at Marrakech </div>
+    
   </div>
 </div>
 
@@ -54,7 +60,6 @@ const Aboutme = ({history}) => {
             <div className="box has-background-dark has-text-light"><i className="fas fa-map-marker-alt has-text-success"></i> Adress: Morroco Marakech Chichaoua  </div>
             <div className="box has-background-dark has-text-light"><i className="fas fa-birthday-cake has-text-danger"></i>  Birth:  22-03-1999  </div>
             <div className="box has-background-dark has-text-light"><i className="fas fa-id-badge has-text-info"></i> Student at master of heigh energy physics and computer science </div>
-            <div className="box has-background-dark has-text-light"><i className="fas fa-university has-text-success-dark"></i> University of Cady Ayyad at Marrakech </div>
             <div className="box has-background-dark has-text-light"> I deal with those technologies :</div>
                 <div className="ml-5 mb-5">
                 <div className="box has-background-dark has-text-light"><i className="fas fa-code has-text-link-dark"></i> HTML, CSS and Bootstrap </div>
@@ -64,70 +69,10 @@ const Aboutme = ({history}) => {
                 <div className="box has-background-dark has-text-light"><i className="fab fa-python  has-text-info-dark"></i> Python and django Framework</div>
                 <div className="box has-background-dark has-text-light"><i className="fas fa-server has-text-warning-dark"></i> Linux and SQL language</div>
                 </div>
-            <div className="box has-background-dark has-text-light"> <i className="fas fa-language has-text-danger-dark"></i> I speak  Arabic, Frensh and English  </div>
+
         </div>
     </div>
     
-        
-
-<h2> my Works : </h2>
-<section>
-  <div className="work-item">
-      <h3> e-commerce website </h3>
-      <p>
-      responsive website shows products to cdivents, 
-      which an user can authenticate to buy a product, 
-      and see his pannel that contains old and new chosen products, 
-      payement is with paypal,
-      I used jwt-authencation-bundle for security.
-      </p>
-      <p> <a href="https://shopping-najmi.herokuapp.com">divnk here </a> </p>
-      <p>
-        <img src="imgs/shopping.png" width="200px" height="350px" alt="shopping-website" />
-      </p>
-      <h4> Used Technologies </h4>
-     
-        <ul>
-          <div>  Symfony and ApiPlatform   </div>
-          <div>  React and Redux </div>
-          <div>  Bootstrap </div>
-          <div>  Axios </div>
-        </ul>
-      
-
-  </div>
-
-   <div className="work-item">
-     <h3> Vertime website </h3>
-      <p>
-      responsive website maded by symfony when students can sign up to the school 
-      to be candidats and when they accept by the admin, so the can see thier courses
-      , notes and prof announces.
-
-      Each prof can add a student note, course and announce besides to see his salary.
-      The admin control all the organasation, he can add a prof remove a students, add classes and see statistics. 
-      </p>
-      <p> <a href="https://najmi-accademy.herokuapp.com">divnk here </a> </p>
-      <p>
-        <img src="imgs/accademy.png" width="400px" height="200px" alt="shopping-website"/>
-      </p>
-      <h4> Used Technologies </h4>
-      
-        <ul>
-          <div>  Symfony  </div>
-          <div>  Bootstrap </div>
-        </ul>
-     
-  </div>
-</section> 
-
-    <div className="interests">
-       <h2> my interests :  </h2>
-       <div> I interest in my familly and friends </div>
-       <div> I divke science and physics, I have a divcence in physics </div>
-       <div> I do sport, my favorite is running and body builder. </div>
-       <div> I divsten all kind of music. </div>
-    </div>
     </div>);
 };
 
