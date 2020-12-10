@@ -4,7 +4,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import SpinningDots from '@grafikart/spinning-dots-element'
 
-
 customElements.define('spinning-dots', SpinningDots)
 
 ReactDOM.render(

@@ -41,7 +41,7 @@ const Home = () => {
           <Link to="/">Create posts automatically on Facebook with Selenium and Python</Link>
         </div>
         <div style={{"position": "relative"}}>
-          <button className="btn">
+          <button className="btn btn-success">
             more articles...
           </button>
         </div>

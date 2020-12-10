@@ -6,9 +6,10 @@ import Footer from './Components/Footer';
 import Blog from './Pages/Blog';
 import Courses from './Pages/Courses';
 import Course from './Pages/Course';
-import Login from './Pages/Login';
 import Webscraping from './Pages/web-scraping';
-import StaticRoutes from './Pages/static_pages/static-routes'
+import Works from './Pages/my-works';
+import Contact from './Pages/Contact';
+import StaticRoutes from './Pages/static_pages/static-routes';
 import {
   BrowserRouter as Router,
   Switch,
@@ -32,8 +33,8 @@ const App = () => {
         <Route path="/blog" component= { Blog}  />
         <Route path="/courses-:slug" component= { Course }  />
         <Route path="/courses/" component= { Courses }  />
-        <Route path="/login/" component= { Login }  />
-        <Route path="/web/" component= { Webscraping }  />
+        <Route path="/my-works/" component= { Works }  />
+        <Route path="/contact/" component= { Contact }  />
         <StaticRoutes />
       </Switch>
       <Footer />
