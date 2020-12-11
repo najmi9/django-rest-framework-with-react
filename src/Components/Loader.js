@@ -8,7 +8,7 @@ const Loader = ({ color }) => {
 
     return (
         <section className="is-flex is-justify-content-center is-align-items-center"
-            style={{ 'min-height': 100 + 'vh' }}>
+            style={{ 'minHeight': 100 + 'vh' }}>
             <spinning-dots
                 style={{ "width": 200 + "px", "strokeWidth": 20 + "px", "color": color }}
                 dots="8">

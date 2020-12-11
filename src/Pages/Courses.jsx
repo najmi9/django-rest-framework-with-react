@@ -15,7 +15,6 @@ const Courses = () => {
             setLoading(true)
         }).catch(e => {
             setError(e)
-            console.log(e)
         })
     }, []);
 

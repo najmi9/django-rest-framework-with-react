@@ -1,5 +1,6 @@
-# Web Scraping With Python: Partcical examples
-
+<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+ Web Scraping With Python: Partcical examples
+</div>
 ### Introduction 
 [Web scraping](https://en.wikipedia.org/wiki/Web_scraping) or web data extraction is a technique which computer program extraxts data from human-readable output coming from another program.
 Basically we use a script to automatically extract data from websites and store it in a database or a file.

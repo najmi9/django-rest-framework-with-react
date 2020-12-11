@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Media from '../Components/course/media';
 
 const Aboutme = ({ history }) => {
 
@@ -11,14 +12,14 @@ const Aboutme = ({ history }) => {
             <div class="card  has-background-dark">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="imgs/me.jpg" alt="Imad Najmi" />
+                        <Media media="imgs/me.jpg" alt="Imad Najmi" />
                     </figure>
                 </div>
                 <div class="card-content">
                     <div class="media">
                         <div class="media-left">
                             <figure class="image is-48x48">
-                                <img src="imgs/me1.jpg" width="50" height="50" alt="IMAD NAJMI" />
+                                <Media media="imgs/me1.jpg" width="50" height="50" alt="IMAD NAJMI" />
                             </figure>
                         </div>
                         <div class="media-content">

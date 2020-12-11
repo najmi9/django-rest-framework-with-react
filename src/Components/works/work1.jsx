@@ -1,11 +1,12 @@
 import React from 'react';
+import Media from '../course/media';
 
 const Work1 = () => {
     return (
         <div className="card">
             <div className="card-image">
                 <figure className="image is-4by3">
-                    <img src="imgs/works/accelerator.png" alt="Ecommerce Website with react" />
+                    <Media media="imgs/works/accelerator.png" alt="Ecommerce Website with react" />
                 </figure>
             </div>
             <div className="card-content">
