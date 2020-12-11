@@ -1,10 +1,12 @@
-# Mercure Protocol With Symfony and Api Platform
+<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+Mercure Protocol With Symfony and Api Platform
+</div>
 
 ## Demo and Inspiration  :
 
 When the admin publish a notification all connected users will be notified by the message of the admin in real time.
 
-<img src="imgs/mercure_demo.png" alt="Mercure Notitfication Demo" width="100%">
+<img src="static/imgs/mercure_demo.png" alt="Mercure Notitfication Demo" width="100%">
 
 ## Mercure Protocol :
 [Mercure Protocol](https://mercure.rocks/docs/mercure) is a protocol allowing to push data updates to web browsers and other HTTP clients in a convenient, fast, reliable and battery-efficient way. It is especially useful to publish async and real-time updates of resources served through web APIs, to reactive web and mobile apps.

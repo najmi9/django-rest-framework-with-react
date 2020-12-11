@@ -1,6 +1,8 @@
-# How to create mrdern website with Symfony Api-Platform and React JS?
+<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+How to create mrdern website with Symfony Api-Platform and React JS?
+</div>
 
-![Symfony React Api Platform](/media/imgs/symfony-react.png)
+![Symfony React Api Platform](static/imgs/symfony-react.png)
 
 ### Prerequisites :
 
@@ -122,7 +124,7 @@ class Product
 
 we add `@ApiResource` annotation to tell Api Platform bundle that we want to add a new resource to our api that we will use in our react frontend.
 
-![Product source](/media/imgs/product_api.png)
+![Product source](static/imgs/product_api.png)
 
 
 #### 7. Create our table in database.
@@ -143,7 +145,7 @@ yarn encore dev
 ```
 After creating the database and run the server, we will check the route http://localhost:8000/api which has a basic swagger documentation through it we will make two POST requests to create two products, in order to have some data to manipulate with.
 
-![Product source](/media/imgs/product_post.png)
+![Product source](static/imgs/product_post.png)
 
 #### 8.Configure webpack encore
 first let us add some dependencies with yarn, you can use npm too and install React and ReactDOM.
