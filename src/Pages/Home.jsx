@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/all.css';
-
+import Media from '../Components/course/media';
 import '../Styles/home.css'
 import '../Styles/mobile.css'
 import '../Styles/box-fire.css'
@@ -16,7 +16,7 @@ const Home = () => {
       </Helmet>
      <div className="card2" style={{"position": "relative"}}>
        <div className="div-image">
-         <img src="imgs/imad.jpg" className="my-image" />
+         <Media media="imgs/imad.jpg" className="my-image" />
        </div>
        <div className="my-description">
          <h3>Hi,</h3>

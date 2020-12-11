@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Work2 from '../Components/works/work2';
 import Work1 from '../Components/works/work1';
@@ -7,6 +7,7 @@ import Work4 from '../Components/works/work4';
 import Work5 from '../Components/works/work5';
 
 const Works = () => {
+
     return (
         <main>
             <Helmet>

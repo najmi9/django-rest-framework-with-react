@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Media = ({ isVideo, media, title, width, height }) => {
+const Media = ({ isVideo, media, title, width, height,className }) => {
+    if (!isVideo) {
+        isVideo = false; 
+    }
     return (
         <div className="chapter-media text-center">
             { isVideo && (
@@ -11,9 +14,9 @@ const Media = ({ isVideo, media, title, width, height }) => {
                     width={width} height={height} />
                 </video>
             )}
-            { !isVideo && (<img src={media}
-                alt={title} width={width}
-                height={height} />)
+            { !isVideo && (<img src={ "static/"+media}
+                alt={title??'Title'} width={width??''}
+                height={height??''}  className={className??''} />)
             }
         </div>
     );
