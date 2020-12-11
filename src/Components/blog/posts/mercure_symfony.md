@@ -1,4 +1,6 @@
-# Mercure Protocol With Symfony and Api Platform
+<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+Mercure Protocol With Symfony and Api Platform
+</div>
 
 ## Demo and Inspiration  :
 

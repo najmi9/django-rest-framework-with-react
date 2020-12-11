@@ -7,11 +7,11 @@ import MarkDown from '../../Components/blog/markdown-parser/MarkDown';
 
 const DeveloperMath = () => {
     return (
-      <div className="main">
-       <Helmet>
-               <title>najmi-imad.com| Math for Develpers</title>
+        <div className="main">
+            <Helmet>
+                <title>najmi-imad.com| Math for Develpers</title>
             </Helmet>
-        	<MarkDown content={content} />
+            <MarkDown content={content} />
         </div>
     );
 };

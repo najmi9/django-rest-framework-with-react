@@ -7,13 +7,13 @@ import { Helmet } from 'react-helmet';
 
 const FacebookPost = () => {
     return (
-    	<>
-    	<Helmet>
-               <title>Automate publishing posts on Facebook</title>
-        </Helmet>
-        <div className="main">
-        	<MarkDown content={content} />
-        </div>
+        <>
+            <Helmet>
+                <title>Automate publishing posts on Facebook</title>
+            </Helmet>
+            <div className="main">
+                <MarkDown content={content} />
+            </div>
         </>
     );
 };

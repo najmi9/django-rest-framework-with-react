@@ -1,4 +1,6 @@
-# How to create mrdern website with Symfony Api-Platform and React JS?
+<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+How to create mrdern website with Symfony Api-Platform and React JS?
+</div>
 
 ![Symfony React Api Platform](/media/imgs/symfony-react.png)
 
