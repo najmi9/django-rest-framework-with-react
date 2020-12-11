@@ -1,12 +1,12 @@
 import React from 'react';
 
-const HandleErrorCase = ({  }) => {
+const HandleErrorCase = ({ }) => {
     return (
-       <div>
-             {error && (<Error />)}
-             
-             {!error && (<Component />) }
-       </div> 
+        <div>
+            {error && (<Error />)}
+
+            {!error && (<Component />)}
+        </div>
     );
 };
 

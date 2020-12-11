@@ -7,14 +7,15 @@ import { Helmet } from 'react-helmet';
 
 const Django = () => {
     return (
-    	<>
-    	<Helmet>
-               <title>Django Rest Framework ApiView and React JS
-         </title>
-        </Helmet>
-        <div className="main">
-        	<MarkDown content={content} />
-        </div>
+        <>
+            <Helmet>
+                <title>
+                    Django Rest Framework ApiView and React JS
+                </title>
+            </Helmet>
+            <div className="main">
+                <MarkDown content={content} />
+            </div>
         </>
     );
 };

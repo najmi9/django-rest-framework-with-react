@@ -1,4 +1,6 @@
-# What is SSH, How it's work, How we can use it and How to secure a open SSH connection?
+<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+What is SSH, How it's work, How we can use it and How to secure a open SSH connection?
+</div>
 
 ## table of content : 
   - [table of content :](#table-of-content-)
