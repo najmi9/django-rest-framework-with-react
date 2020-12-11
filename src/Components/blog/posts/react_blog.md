@@ -1,4 +1,6 @@
-# How to Create a Technical Blog by using React, Markdown and Syntax Highlighter Code ?
+<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+ How to Create a Technical Blog by using React, Markdown and Syntax Highlighter Code ?
+</div>
 
 ### 0. Introduction :
 For developers, have a technical blog is one of most imporatnt thing to have a presence in the internet, but the majority did not know what the efficient way to create one.

@@ -69,42 +69,42 @@ const chapters = [
 
 
 
-const  courses =  [
-        {
-            "id": 1,
-            "title": "course title la mécanique quantique",
-            "description": "the description of the course",
-            "media": "/courses/cover/glases.jpeg",
-            "author": 3,
-            "slug": "course-slug",
-            "objectifs": "hello world, objectifs",
-            "is_video": false,
-            "createdAt": "09/22/2020 14:35:42"
-        },
-        {
-            "id": 2,
-            "title": "course title la thermodynamique",
-            "description": "the description of the course",
-            "media": "/courses/cover/cover.jpg",
-            "author": 3,
-            "slug": "course-slug2",
-            "objectifs": "hello world, objectifs",
-            "is_video": false,
-            "createdAt": "09/22/2020 14:37:30"
-        },
-        {
-            "id": 3,
-            "title": "Introduction to GNU Linux",
-            "description": "What you'll learn ?\r\nBy the end of this course you will understand the fundamentals of the Linux operating system and be able to apply that knowledge in a practical and useful manner.\r\n\r\nThis course is an introduction to Linux operating system, il will help  beginners to understand the system and how it works,  we are going to discover this system and useful commands together.",
-            "media": "/courses/cover/logo-linux.jpg",
-            "author": 1,
-            "slug": "GNU Linux",
-            "objectifs": "This course aims to :\r\n-  Teach you the fundamentals of the Linux operating system\r\n-  Help you to understand the linux OS an dhow it works\r\n- Show you how to use the basic commands with examples\r\n-  Help you to understand the security system in Linux\r\n- Teach you How to use the terminal in Linux\r\n- Help you to set up a Ubuntu web server\r\n- Help you to have a hacker terminal",
-            "is_video": false,
-            "createdAt": "09/23/2020 11:20:43"
-        }
-    ]
-
-    export {
-        chapters, courses
+const courses = [
+    {
+        "id": 1,
+        "title": "course title la mécanique quantique",
+        "description": "the description of the course",
+        "media": "/courses/cover/glases.jpeg",
+        "author": 3,
+        "slug": "course-slug",
+        "objectifs": "hello world, objectifs",
+        "is_video": false,
+        "createdAt": "09/22/2020 14:35:42"
+    },
+    {
+        "id": 2,
+        "title": "course title la thermodynamique",
+        "description": "the description of the course",
+        "media": "/courses/cover/cover.jpg",
+        "author": 3,
+        "slug": "course-slug2",
+        "objectifs": "hello world, objectifs",
+        "is_video": false,
+        "createdAt": "09/22/2020 14:37:30"
+    },
+    {
+        "id": 3,
+        "title": "Introduction to GNU Linux",
+        "description": "What you'll learn ?\r\nBy the end of this course you will understand the fundamentals of the Linux operating system and be able to apply that knowledge in a practical and useful manner.\r\n\r\nThis course is an introduction to Linux operating system, il will help  beginners to understand the system and how it works,  we are going to discover this system and useful commands together.",
+        "media": "/courses/cover/logo-linux.jpg",
+        "author": 1,
+        "slug": "GNU Linux",
+        "objectifs": "This course aims to :\r\n-  Teach you the fundamentals of the Linux operating system\r\n-  Help you to understand the linux OS an dhow it works\r\n- Show you how to use the basic commands with examples\r\n-  Help you to understand the security system in Linux\r\n- Teach you How to use the terminal in Linux\r\n- Help you to set up a Ubuntu web server\r\n- Help you to have a hacker terminal",
+        "is_video": false,
+        "createdAt": "09/23/2020 11:20:43"
     }
+]
+
+export {
+    chapters, courses
+}
