@@ -14,7 +14,7 @@ const Media = ({ isVideo, media, title, width, height,className }) => {
                     width={width} height={height} />
                 </video>
             )}
-            { !isVideo && (<img src={ "static/"+media}
+            { !isVideo && (<img src={ media}
                 alt={title??'Title'} width={width??''}
                 height={height??''}  className={className??''} />)
             }

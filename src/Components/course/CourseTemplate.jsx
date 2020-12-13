@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 //import Chapter from './chapter'
 import ReactDOM from 'react-dom';
-import '../../Styles/course.css';
 import Component from './component';
 import MyLoadable from '../../utils/my-loadable';
 

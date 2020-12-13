@@ -1,24 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../Styles/footer.css';
+import { FACEBOOK, LINKED_IN, GITHUB, YOUTUBE } from '../Config';
 const Footer = () => {
 
     return (
-        <footer>
-            <div className="footer-main">
-                <div className="" style={{ 'justifySelf': 'center' }}>
-                    <Link to="" title="Facebook"><i className="fab fa-facebook"></i></Link>
-                    <Link to="" title="Github"> <i className="fab fa-github"></i></Link>
-                    <Link to="" title="Youtube"> <i className="fab fa-youtube"></i></Link>
-                    <Link to="" title="Linked-in"> <i className="fab fa-linkedin"></i></Link>
-                </div>
-                <div style={{ 'justifySelf': 'center' }}>
-                    <p><i className="fas fa-phone-volume"></i> +212 07 62 95 17 42</p>
-                    <p><i className="fas fa-envelope"></i> imadnajmi9@gmail.com</p>
-                </div>
+        <footer className="">
+            <div className="">
+                <a href={FACEBOOK} target="_blank" title="Facebook"><i className="fab fa-facebook"></i></a>
+                <a href={GITHUB} target="_blank" title="Github"> <i className="fab fa-github"></i></a>
+                <a href={YOUTUBE} target="_blank" title="Youtube"> <i className="fab fa-youtube"></i></a>
+                <a href={LINKED_IN} target="_blank" title="Linked-in"> <i className="fab fa-linkedin"></i></a>
             </div>
-            <div className="Copyrights fire">
+            <div className="fire">
                 © 2020 Copyright: All Rightd Reserved
+            </div>
+
+            <div className="">
+                <p><i className="fas fa-phone-volume"></i> +212 07 62 95 17 42</p>
+                <p><i className="fas fa-envelope"></i> imadnajmi9@gmail.com</p>
             </div>
         </footer>
     );

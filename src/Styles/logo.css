@@ -1,0 +1,13 @@
+#imad{
+	animation: wave 0.5s infinite; 
+}
+
+@keyframes wave {
+	from{
+		fill: blue;
+	}
+
+	to{
+		fill: green;
+	}
+}

@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import "../Styles/errors.css"
+
 const Error500 = ({ className }) => {
     return (
         <div className="error500"> 

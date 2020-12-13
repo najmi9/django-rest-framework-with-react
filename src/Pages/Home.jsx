@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Styles/all.css';
 import Media from '../Components/course/media';
-import '../Styles/home.css'
-import '../Styles/mobile.css'
-import '../Styles/box-fire.css'
+import Logo from '../Components/logo';
+
 import { Helmet } from 'react-helmet';
 
 //import Svg from '../Components/svg';
-const Home = () => {  
+const Home1 = () => {  
     return (<main>
       <div className="main-container">
       <Helmet>
@@ -49,5 +47,13 @@ const Home = () => {
    </div>
     </main>);
 };
+
+const Home = () => {
+   return(
+    <div>
+      <Logo />
+    </div>
+   );
+}
 
 export default Home;

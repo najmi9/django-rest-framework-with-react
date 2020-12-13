@@ -1,25 +1,14 @@
 footer{
-  position: relative;
-  font-size: 2.8rem;
   background-color: #353132;
   color: darkorange;
-  width: 100%;
-  margin-top: 20px;
-  }
-div.Copyrights{
-text-align:center;
-width: 100%;
-padding: 5px;
-margin: 5px;
 }
+
 
 footer div a i{
 	background-color: white!important;
-	overflow: hidden;
 	margin: 15px;
-    font-size: 4rem;
-    border-radius:10px;
-    border: 5px solid white;
+  border-radius:10px;
+  border: 5px solid white;
 }
 
 footer div i.fa-facebook{  
@@ -38,39 +27,18 @@ footer div i.fa-linkedin{
    color:magenta;
 }
 
-div.footer-main{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-content: center;
-	margin-top: 10px;
-	margin-bottom: 25px;
-	align-items: center;
-}
-
-@media (max-width: 762px){
-  footer{
-    margin-top: 20px;
-    margin-bottom: 0!important;
-  }
-  div.footer-main{
-    grid-template-columns: 1fr;
-  }
-}
-
 i.fa-phone-volume{
   color: darkgreen;
   background-color: white!important;
 	
 	margin: 5px;
-    font-size: 2.5rem;
     border-radius:10px;
     border: 5px solid white;
 }
 i.fa-envelope{
 	 background-color: white!important;
-	
 	margin: 5px;
-    font-size: 2.5rem;
+
     border-radius:10px;
     border: 5px solid white;
 	color: red;
