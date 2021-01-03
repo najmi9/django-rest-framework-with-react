@@ -1,0 +1,119 @@
+svg{
+	width: 100%;
+	height: auto;
+}
+
+
+div.logo{
+	width: 150px;
+	height: 150px;
+}
+
+g#hala path{
+	animation: hala 1s infinite 1s;
+	transition: 0.5s;
+}
+
+@keyframes hala{
+	from{
+		fill: darkblue;
+	}
+
+	to{
+		fill: blue;
+	}
+}
+
+g#logo path:nth-child(1){
+	animation: line-anim 2s ease forwards infinite;
+}
+
+g#logo path:nth-child(2){
+	animation: line-anim 2s ease forwards 0.4s infinite;
+}
+
+g#logo path:nth-child(3){
+	animation: line-anim 2s ease forwards 0.8s infinite;
+}
+g#logo path:nth-child(4){
+	animation: line-anim 2s ease forwards 1.2s infinite;
+}
+g#logo path:nth-child(5){
+	animation: line-anim 2s ease forwards 1.6s infinite;
+}
+g#logo path:nth-child(6){
+	animation: line-anim 2s ease forwards 2s infinite;
+}
+g#logo path:nth-child(7){
+	animation: line-anim 2s ease forwards 2.4s infinite;
+}
+g#logo path:nth-child(8){
+	animation: line-anim 2s ease forwards 3s infinite;
+}
+g#logo path:nth-child(9){
+	animation: line-anim 2s ease forwards 3.4s infinite;
+}
+
+@keyframes line-anim{
+	from{
+		fill: #00008b;
+	}
+	to{
+		fill: white;
+	}
+}
+
+
+@keyframes rotate {
+	
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+svg.my-logo path:nth-child(2){
+    transform-origin: 230px 80px;
+    animation: rotate 2s linear infinite;
+}
+
+
+svg.my-logo path:nth-child(3){
+    transform-origin: 522px 80px;
+    animation: rotate 2s linear infinite;
+}
+
+
+svg.my-logo path:nth-child(5){
+  fill: green;
+  transition:all 1s;
+  animation: hat 1s linear infinite;
+ 
+}
+
+svg.my-logo path:nth-child(4){
+	display: none;
+}
+
+@keyframes hat{
+	from{
+		transform: translate(-5px, -2px);
+	}
+
+	to{
+		transform: translate(5px, 2px);
+	}
+}
+
+#mouth{
+	animation: hat 1s linear infinite;
+}
+
+@keyframes mouth {
+	to{
+		fill: yellow;
+	}
+}
+
+#cloth{
+	animation: hala 1s linear infinite;
+}

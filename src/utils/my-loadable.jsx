@@ -1,5 +1,5 @@
 import Loadable from 'react-loadable';
-import Loader from '../Components/Loader';
+import Loader from '../components/Loader';
 import React from 'react';
 const ErrorHandle = (props) => (<div className="bg-light m- p-5">
     <h1>Error! </h1>

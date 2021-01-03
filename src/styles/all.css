@@ -1,0 +1,34 @@
+svg{
+  height: auto;
+  width: 100%;
+}
+
+
+body{
+  background-image: url('../svg/bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+p::selection, h2::selection, div::selection, h3::selection{
+	background-color: rgb(124, 51, 131);
+	color: white;
+}
+
+html { 
+  
+  background-repeat: no-repeat;
+  /*background-color: #1b1b1b;*/
+  scroll-behavior: smooth;
+}
+
+
+pre{
+  max-height: 400px;
+  overflow: auto;
+}

@@ -1,28 +1,30 @@
 import React from 'react';
-import Home from './Pages/Home';
-import Aboutme from './Pages/Aboutme';
-import PostDetails from './Pages/PostDetails';
-import Footer from './Components/Footer';
-import Blog from './Pages/Blog';
-import Courses from './Pages/Courses';
-import Course from './Pages/Course';
-import Webscraping from './Pages/web-scraping';
-import Works from './Pages/my-works';
-import Contact from './Pages/Contact';
-import StaticRoutes from './Pages/static_pages/static-routes';
+import Home from './pages/Home';
+import Aboutme from './pages/Aboutme';
+import PostDetails from './pages/PostDetails';
+import Footer from './components/Footer';
+import Blog from './pages/Blog';
+import Courses from './pages/Courses';
+import Course from './pages/Course';
+import Webscraping from './pages/web-scraping';
+import Works from './pages/my-works';
+import Contact from './pages/Contact';
+import StaticRoutes from './pages/static_pages/static-routes';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import Header from './Components/Header';
+import Header from './components/Header';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { setup } from './service/AuthAPI';
+import './styles/all.css';
+
+
 
 setup();
 const App = () => {
-  
     return (
     <Router>
       <Header />
@@ -35,6 +37,7 @@ const App = () => {
         <Route path="/courses/" component= { Courses }  />
         <Route path="/my-works/" component= { Works }  />
         <Route path="/contact/" component= { Contact }  />
+        <Route path="/bg/" component= { () => <div></div> }  />
         <StaticRoutes />
       </Switch>
       <Footer />
