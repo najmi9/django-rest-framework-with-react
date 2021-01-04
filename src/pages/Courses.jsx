@@ -3,7 +3,6 @@ import { fetchCourses } from '../service/courseAPI';
 //import CourseItem from '../Components/course_item';
 import { Link } from 'react-router-dom';
 import Media from '../components/course/media';
-import FinalPage from '../components/FinalPage';
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
@@ -46,11 +45,7 @@ const Courses = () => {
     }
 
     return (
-        <FinalPage
-            title='courses'
-            loading={loading}
-            error={error}
-            Component={Component}
+        <Component
         />
     );
 };

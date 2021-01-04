@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import UserAPI from '../Services/UserAPI';
 import { toast } from 'react-toastify';
 import { Redirect } from 'react-router-dom';
-import FinalPage from '../components/FinalPage';
-
 
 const Register = ({ history }) => {
     const [loading, setLoading] = useState(false);
@@ -90,11 +88,6 @@ const Register = ({ history }) => {
         </form>
     </div>);
 
-    return (<FinalPage
-        title="Register"
-        loading={loading}
-        error={error}
-        Component={Component}
-    />);
+    return (<Component />);
 }
 export default Register;

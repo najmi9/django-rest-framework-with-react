@@ -44,11 +44,11 @@ const Header = () => {
         <div class="line"></div>
       </div>
       <ul class="nav-links">
-        <li  onClick={handleClick}  class="custom-active"><Link  to="/" class="custom-nav-item">Home</Link></li>
-        <li  onClick={handleClick}><Link to="/about-me" class="custom-nav-item">About</Link></li>
-        <li  onClick={handleClick}><Link to="/contact" class="custom-nav-item">Contact</Link></li>
-        <li  onClick={handleClick}><Link to="blog" class="custom-nav-item">Articles</Link></li>
-        <li  onClick={handleClick}><Link to="/my-works" class="custom-nav-item">Projects</Link></li>
+        <li  onClick={handleClick}  class="custom-nav-link custom-active"><Link  to="/" class="custom-nav-item">Home</Link></li>
+        <li  onClick={handleClick} class="custom-nav-link" ><Link to="/about-me" class="custom-nav-item">About</Link></li>
+        <li  onClick={handleClick} class="custom-nav-link"><Link to="/contact" class="custom-nav-item">Contact</Link></li>
+        <li  onClick={handleClick} class="custom-nav-link"><Link to="blog" class="custom-nav-item">Articles</Link></li>
+        <li  onClick={handleClick} class="custom-nav-link"><Link to="/my-works" class="custom-nav-item">Projects</Link></li>
       </ul>
     </nav>
 

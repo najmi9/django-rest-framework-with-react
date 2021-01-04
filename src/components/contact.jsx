@@ -28,18 +28,24 @@ const Contact = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" name="email"
+            <div className="m-2">
+                <input type="text" name="email"
                 className="form-control" value={data.email}
                 onChange={handleChange}
-            />
+                />
+            </div>
+            <div className="m-2">
             <textarea name="message"
                 className="form-control"
                 value={data.message}
                 onChange={handleChange}
             >Message</textarea>
-            <button type="submit" className="btn btn-success">
+             </div>
+            <div className="m-2">
+                <button type="submit" className="btn btn-success">
                 send message
-            </button>
+                </button>
+            </div>
         </form>
     );
 };

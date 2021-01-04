@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { authenticate } from '../service/AuthAPI';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
-import FinalPage from '../components/FinalPage';
 
 const Login = ({ history }) => {
     const [credentials, setCredentials] = useState({

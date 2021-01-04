@@ -1,6 +1,10 @@
 footer{
   background-color: #353132;
   color: darkorange;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -30,16 +34,14 @@ footer div i.fa-linkedin{
 i.fa-phone-volume{
   color: darkgreen;
   background-color: white!important;
-	
 	margin: 5px;
-    border-radius:10px;
-    border: 5px solid white;
+  border-radius:10px;
+  border: 5px solid white;
 }
 i.fa-envelope{
-	 background-color: white!important;
+	background-color: white!important;
 	margin: 5px;
-
-    border-radius:10px;
-    border: 5px solid white;
+  border-radius:10px;
+  border: 5px solid white;
 	color: red;
 }

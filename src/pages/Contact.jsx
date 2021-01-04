@@ -19,7 +19,7 @@ const Contact = () => {
 	}
 
 	return (
-		<main className="m-4">
+		<section className="m-4">
 			<div className="container">
 				<div className="title has-text-light"> Contact me: </div>
 				<form method="post" onSubmit={handleSubmit}>
@@ -46,7 +46,7 @@ const Contact = () => {
 					</div>
 				</form>
 			</div>
-		</main>
+		</section>
 	);
 }
 

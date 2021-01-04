@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CourseTemplate from '../components/course/CourseTemplate';
 import { fetchCourse, fetchChaptersForCourse } from '../service/courseAPI';
-import FinalPage from '../components/FinalPage';
 
 const Course = ({ match }) => {
     const { slug } = match.params;
@@ -30,12 +29,7 @@ const Course = ({ match }) => {
     const Component = () => (<CourseTemplate course={course} chapters={chapters} />);
 
     return (
-        <FinalPage
-            title={slug}
-            loading={loading}
-            error={error}
-            Component={Component}
-        />
+        <Component />
     );
 };
 

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { fecthChapter } from '../../service/courseAPI';
 import Media from './media';
 //import toast from 'react-toastify';
-import FinalPage from '../FinalPage';
 
 const Chapter = ({ id }) => {
     const [chapter, setChapter] = useState({});
@@ -46,12 +45,7 @@ const Chapter = ({ id }) => {
             </div>
         </>
     );
-    return (<FinalPage
-        title={chapter.title}
-        loading={loading}
-        error={error}
-        Component={Component}
-    />);
+    return (<Component />);
 };
 
 export default Chapter;

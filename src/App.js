@@ -26,9 +26,10 @@ import './styles/all.css';
 setup();
 const App = () => {
     return (
+      
     <Router>
       <Header />
-      <Switch>
+      <Switch>        
         <Route path="/" component= { Home} exact />     
         <Route path="/blog-:id" component= { PostDetails}  />
         <Route path="/about-me" component= { Aboutme}  />
@@ -43,6 +44,7 @@ const App = () => {
       <Footer />
        <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
     </Router>
+   
     );
 };
 
