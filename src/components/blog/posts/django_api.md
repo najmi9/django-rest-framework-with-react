@@ -1,12 +1,12 @@
-<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+<h2 class="mt-2 rounded shadow-lg p-3 text-primary text-center">
  Django Rest Framework ApiView and React JS
-</div>
+</h2>
 
-# reference [https://www.django-rest-framework.org/]()
+### Introduction 
+In this artcile we will create a simple rest api and use it in React JS, in the backend we use [Django](https://www.djangoproject.com/) that is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. [Django REST framework](https://www.django-rest-framework.org) is a powerful and flexible toolkit for building Web APIs.
 
-Django is a web developpment python framework, framwork is
-
-create virtual enviroment called venv, you can named what you want.
+### Get Started
+First of all create a virtual enviroment called venv, you can named what you want.
 
 ```bash
 python3 -m venv venv
@@ -46,7 +46,7 @@ pip install djangorestframework
 ```
 
 Add the two appalications to `INSTALLED_APPS` variable in `setting.py` file.
-
+### Configuration
 ```python
 #api_django.settings.py-------------------------
 INSTALLED_APPS = [
@@ -66,9 +66,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-]
 ```
-
+### Create the Api
 Now we will create a model for application.
 
 ```python
@@ -166,7 +165,7 @@ python manage.py runserver
 Let us create some random product to manipulate with.
 ![create product with api](static/imgs/django1.png)
 
-## Front end with React
+### Front end with React
 
 First of all, create a new react app called frontend :
 

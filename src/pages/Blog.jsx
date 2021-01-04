@@ -11,18 +11,20 @@ const Blog = ({ history }) => {
     }, []);
 
     return (
-        <div>
+        <section>
             <Helmet>
                 <title>najmi-imad.com| My Blog</title>
             </Helmet>
             {!loading && <Loader />}
             {loading && (
                 <section className="container mt-5">
-                    <div className="title has-text-white"> List of Articles: </div>
+                    <h2 className="text-danger bg-light border-bottom p-2">
+                     List of Articles: 
+                    </h2>
                     <AsideBar />
                 </section>
             )}
-        </div>
+        </section>
     );
 };
 export default Blog;

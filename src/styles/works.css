@@ -1,0 +1,57 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+@media screen and (min-width: 780px) {
+	.custom-form{
+		margin:auto;
+		max-width: 700px;
+	}
+}
+
+.work{
+	border-bottom: 7px solid brown;
+	margin-bottom: 20px;
+	padding-left: 2px;
+}
+
+.tags{
+	padding: 3px;
+	margin-top: 0px;
+}
+.tag{
+	display: inline-block;
+	background-color: #008080;
+	margin: 5px;
+	padding: 4px; 
+	color:  white;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.tag i{
+	color: darkorange;
+	padding: 2px;
+}
+
+time{
+	font-family: cursive;
+	text-decoration: underline;
+	color: #2f4f4f;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.fa-clock{
+	color: #000080;
+	padding: 3px;
+}
+
+.work-title{
+	font-weight: bold;
+}
+.work-description{
+	padding: 5px;
+	border-radius: 3px;
+	font-family: sans-serif;
+	border-bottom: 1px solid #663399;
+	text-indent: 15px;
+}

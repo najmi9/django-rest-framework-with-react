@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.custom-link{
+	font-weight: bolder;
+	font-size: 15px;
+	color: blue;
+	text-decoration: none;
+	font-family: sans-serif;
+	transition: all 0.5s;
+	padding: 2px;
+}
+
+.custom-link:hover{
+	color: darkblue;
+	transform: scale(1.1);
+}

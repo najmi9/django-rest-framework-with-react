@@ -1,41 +1,45 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import Work2 from '../components/works/work2';
-import Work1 from '../components/works/work1';
-import Work3 from '../components/works/work3';
-import Work4 from '../components/works/work4';
-import Work5 from '../components/works/work5';
+import ReactShop from '../components/works/react-shop';
+import Calculators from '../components/works/calculators';
+import VertimeWebsite from '../components/works/vertime-website';
+import Api from '../components/works/api';
+import Gvet from '../components/works/gvet';
+import ShopSymfony from '../components/works/shop-symfony';
+import '../styles/works.css';
 
 const Works = () => {
 
     return (
-        <main>
+        <section>
             <Helmet>
                 <title>najmi-imad| Works</title>
             </Helmet>
             <div className="container">
-                <h1 className="title has-text-light"> List of my works :</h1>
-                <div className="columns">
-                    <div className="column is-4">
-                        <Work2 />
+                <h1 className="bg-light rounded p-3 my-4 text-primary" 
+                style={{ 'fontWeight': 'bolder' }}>
+                    List of my works :
+                </h1>
+                    <div className="work">
+                        <ReactShop />
                     </div>
-                    <div className="column is-4">
-                        <Work1 />
+                     <div className="work">
+                        <ShopSymfony />
                     </div>
-                    <div className="column is-4">
-                        <Work3 />
+                    <div className="work">
+                        <Calculators />
                     </div>
-                </div>
-                <div className="columns mt-5">
-                    <div className="column is-4">
-                        <Work4 />
+                    <div className="work">
+                        <Gvet />
                     </div>
-                    <div className="column is-4">
-                        <Work5 />
+                    <div className="work">
+                        <Api />
                     </div>
-                </div>
+                    <div className="work">
+                        <VertimeWebsite />
+                    </div>
             </div>
-        </main>
+        </section>
     );
 }
 

@@ -1,8 +1,9 @@
-<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+<h2 class="mt-2 rounded shadow-lg p-3 text-primary text-center">
 How to create mrdern website with Symfony Api-Platform and React JS?
+</h2>
+<div class="text-center">
+<img src="imgs/symfony-react.png" alt="Symfony React Api Platform">
 </div>
-
-![Symfony React Api Platform](static/imgs/symfony-react.png)
 
 ### Prerequisites :
 

@@ -1,40 +1,6 @@
-		
-
-#btn{
-	padding: 3px;
-	font-weight: bold;
-	font-style: italic;
-	font-family: sans-serif;
-	background-color: darkorange;
-	border-radius: 50%;
-	padding: 10px;
-	outline: none;
-	background-color: transparent;
-	margin-bottom: 10px;
-	animation: feefoo 1s linear 1.5s infinite alternate;
-	transition: 1s;
-}
-#btn:hover{
-	background-color: blue;
-}
-
-
-@keyframes feefoo{
-	from{
-		transform: scale(1);
+@media screen and (min-width: 780px) {
+	.custom-form{
+		margin:auto;
+		max-width: 700px;
 	}
-	to{
-		transform: scale(1.2);
-	}
-}
-
-.contact{
-
-	color: blue;
-	position: absolute;
-	right: 20px;
-	bottom: 0;
-	margin:auto;
-	text-align: center;
-
 }

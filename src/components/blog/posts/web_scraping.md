@@ -1,7 +1,9 @@
-<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
- Web Scraping With Python: Partcical examples
-</div>
+<h2 class="mt-2 rounded shadow-lg p-3 text-primary text-center">
+Web Scraping With Python: Partcical examples
+</h2>
+
 ### Introduction 
+
 [Web scraping](https://en.wikipedia.org/wiki/Web_scraping) or web data extraction is a technique which computer program extraxts data from human-readable output coming from another program.
 Basically we use a script to automatically extract data from websites and store it in a database or a file.
 t’s possible to do web scraping with many other programming languages like java or even javascript... but Python is recommended because of his simplicity and the powerfull libraries the he have like [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) and Requests, notice that before use any website  you should look for a **terms and conditions page** to see if there are explicit rules about scraping. If there are, we should follow them. If there are not, then it becomes more of a judgement call.

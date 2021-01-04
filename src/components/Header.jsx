@@ -17,11 +17,21 @@ const Header = () => {
             </label>
             <label className="logo fire">Imad Najmi</label>
             <ul>
-                <li><Link className="active js-link" to="/" onClick={handleClick}>Home</Link></li>
-                <li><Link to="/about-me" className="js-link" onClick={handleClick}>About</Link></li>
-                <li><Link to="blog" className="js-link" onClick={handleClick}>Articles</Link></li>
-                <li><Link to="/contact" className="js-link" onClick={handleClick}>Contact</Link></li>
-                <li><Link to="/my-works" className="js-link" onClick={handleClick}>Works</Link></li>
+                <li>
+                    <Link className="active js-link" to="/" onClick={handleClick}>Home</Link>
+                </li>
+                <li>
+                    <Link to="/about-me" className="js-link" onClick={handleClick}>About</Link>
+                </li>
+                <li>
+                    <Link to="blog" className="js-link" onClick={handleClick}>Articles</Link>
+                </li>
+                <li>
+                    <Link to="/contact" className="js-link" onClick={handleClick}>Contact</Link>
+                </li>
+                <li>
+                    <Link to="/my-works" className="js-link" onClick={handleClick}>Works</Link>
+                </li>
             </ul>
         </header>
 
@@ -38,17 +48,27 @@ const Header = () => {
 
     return(
         <nav>
-      <div class="hamburger" onClick={handleHamburgerClick}>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+      <div className="hamburger" onClick={handleHamburgerClick}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </div>
-      <ul class="nav-links">
-        <li  onClick={handleClick}  class="custom-nav-link custom-active"><Link  to="/" class="custom-nav-item">Home</Link></li>
-        <li  onClick={handleClick} class="custom-nav-link" ><Link to="/about-me" class="custom-nav-item">About</Link></li>
-        <li  onClick={handleClick} class="custom-nav-link"><Link to="/contact" class="custom-nav-item">Contact</Link></li>
-        <li  onClick={handleClick} class="custom-nav-link"><Link to="blog" class="custom-nav-item">Articles</Link></li>
-        <li  onClick={handleClick} class="custom-nav-link"><Link to="/my-works" class="custom-nav-item">Projects</Link></li>
+      <ul className="nav-links">
+        <li  onClick={handleClick}  className="custom-nav-link custom-active">
+            <Link  to="/" className="custom-nav-item">Home</Link>
+        </li>
+        <li  onClick={handleClick} className="custom-nav-link" >
+            <Link to="/about-me" className="custom-nav-item">About</Link>
+        </li>
+        <li  onClick={handleClick} className="custom-nav-link">
+            <Link to="/contact" className="custom-nav-item">Contact</Link>
+        </li>
+        <li  onClick={handleClick} className="custom-nav-link">
+            <Link to="blog" className="custom-nav-item">Articles</Link>
+        </li>
+        <li  onClick={handleClick} className="custom-nav-link">
+            <Link to="/my-works" className="custom-nav-item">Projects</Link>
+        </li>
       </ul>
     </nav>
 

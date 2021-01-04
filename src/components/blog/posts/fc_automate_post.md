@@ -1,6 +1,6 @@
-<div class="box title has-text-centered has-text-primary mb-3 has-background-grey-dark">
+<h2 class="mt-2 rounded shadow-lg p-3 text-primary text-center">
 Create posts automatically on Facebook with Selenium and Python
-</div>
+</h2>
 
 ## What's we going to do ?
 After we enter the username and password of our Facebook account, the srcipt will be logged in and save the browser's cookies in a file using **pickle** to use it in the next time to avoid a login again, after authentification, we will get the text and the image from a **csv file** that contains the content and the path to the image of all future publications, to be published  after fill in the publication form.
