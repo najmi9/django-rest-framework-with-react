@@ -1,76 +1,110 @@
-
-div.card1{
-	width: 100%;
-	font-size: 2.5rem;
-	color: white;
-}
-
-div.card2{
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr; 
-	color: #00FFFF;
-	justify-content: center;
-	align-items: center;
-}
-
-div.my-description{
-	margin: 20px;
-	color: #00FFFF;
-	font-size: 2.5rem;
-}
-
-img.my-image{
-	height : 400px;
-	text-align: center;
-}
-
-div.div-image{
-	margin-top: 50px;
-	text-align: center;
-}
-
-div.post{
-	margin-left: 5px;
-	margin-bottom: 20px;
-	padding: 7px;
-	border-radius: 2px;
-	box-shadow: 0 4px 8px 0 orange, 0 6px 10px 0 orange;
-/*	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-    text-align: center;
-}
-div.post:hover{
-	cursor: pointer;
-	background-color: #cd4606;
-	transform: scale(1.01);
-}
-div.post a{
-	padding: auto;
-	text-decoration: none;
-	cursor: pointer;
-	text-align: center;
-	padding: 0.3rem;
-	color:white;
-}
-
-h3.articles{
-	font-size: 2.5rem;
-	color: #0000fd;
-}
-button.btn{
-	padding: 5px 1px 5px 1px;
-	background-color:#cd4606;
-	color: white;
-	margin:5px; 
-	outline: none;
-	border-radius: 30px;
-	position: absolute;
-	right: 0;
-	font-size: 2rem;
+.my-description{
 	font-weight: bold;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	color: darkgreen;
+	max-width: 60%;
+	padding-left: 30px;
+	animation: about-me 1s 1 alternate 2.5s;
 }
-button.btn:hover{
-	cursor: pointer;
-	transform: scale(1.01);
-	background-color: transparent;
+
+.about-me-btn{
+	transition: all 1s;
+	color: purple;
+	font-weight: bold;
+	padding-left: 30px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about-me{
+	transition: all 1s;
+	margin-bottom: 15px;
+	animation: about-me 1s 1 alternate 3s;
+}
+
+@keyframes about-me{
+	from{
+		 
+	}
+
+	to{
+		 
+	}
+}
+
+.my-name{
+	margin-top: 10;
+	padding: 0;
+	animation: slidein 1s linear 1;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+@keyframes slidein {
+  	from { transform: scaleX(0); }
+  	to   { transform: scaleX(1); }
+}
+
+.my-name svg g path{
+	transition: all 1s;
+}
+
+.my-name svg g path:nth-child(1){
+	animation: name 1.5s 2;
+}
+
+.my-name svg g path:nth-child(2){
+	animation: name 1.5s 1 .4s;
+}
+
+.my-name svg g path:nth-child(3){
+	animation: name 1.5s 1 .6s;
+}
+
+.my-name svg g path:nth-child(4){
+	animation: name 1.5s 1 .8s;
+}
+
+.my-name svg g path:nth-child(5){
+	animation: name 1.5s 1 1s;
+}
+
+.my-name svg g path:nth-child(6){
+	animation: name 1.5s 1 1.2s;
+}
+
+.my-name svg g path:nth-child(7){
+	animation: name 1.5s 1 1.4s;
+}
+
+.my-name svg g path:nth-child(8){
+	animation: name 1.5s 1 1.6s;
+}
+
+.my-name svg g path:nth-child(9){
+	animation: name 1.5s 1 1.8s;
+}
+
+
+@keyframes name {
+	from{
+		transform: translateX(10%);
+	}
+
+	to{
+		transform: translateX(0);
+	}
+}
+
+@keyframes divAnimation {
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
 }

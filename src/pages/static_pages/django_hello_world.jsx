@@ -1,9 +1,7 @@
 import React from 'react';
-
 import content from '../../components/blog/posts/django_api.md';
 import MarkDown from '../../components/blog/markdown-parser/MarkDown';
 import { Helmet } from 'react-helmet';
-
 
 const Django = () => {
     return (
@@ -19,6 +17,5 @@ const Django = () => {
         </section>
     );
 };
-
 
 export default Django;

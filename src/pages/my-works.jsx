@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import ReactShop from '../components/works/react-shop';
 import Calculators from '../components/works/calculators';

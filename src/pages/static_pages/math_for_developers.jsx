@@ -1,9 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-
 import content from '../../components/blog/posts/math_for_developers.md';
 import MarkDown from '../../components/blog/markdown-parser/MarkDown';
-
 
 const DeveloperMath = () => {
     return (
@@ -15,6 +13,5 @@ const DeveloperMath = () => {
         </section>
     );
 };
-
 
 export default DeveloperMath;

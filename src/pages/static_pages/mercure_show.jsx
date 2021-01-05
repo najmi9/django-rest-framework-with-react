@@ -1,9 +1,7 @@
 import { Helmet } from 'react-helmet';
 import React from 'react';
-
 import content from '../../components/blog/posts/mercure_symfony.md';
 import MarkDown from '../../components/blog/markdown-parser/MarkDown';
-
 
 const Mercure = () => {
     return (
@@ -15,4 +13,5 @@ const Mercure = () => {
         </section>
     );
 }
+
 export default Mercure;

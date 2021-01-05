@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/contact.css';
-import { createContact } from '../service/ContactAPI';
+//import { createContact } from '../service/ContactAPI';
 import Swal from 'sweetalert2'
 
 const Contact = () => {
