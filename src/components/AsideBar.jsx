@@ -70,23 +70,30 @@ const AsideBar = () => {
                 title="Automate publishing posts on Facebook with Selenium and Python."
                 />
             </div>
+
+            <div className="col-lg-4 col-md-6 col-sm-12">
+                <ArticleTitle 
+                src="imgs/blog/doctrine-cache/doctrine_cache.png"
+                to="/doctrine-orm-second-level-cache"
+                title="Doctrine ORM: Second Level Cache."
+                />
+            </div>
         </div>
     );
 };
 
 const ArticleTitle = ({to, src, title}) => {
     return(
-        
-            <div className="card">
-                <div className="card-header text-center">
-                    <img src={src} alt={title} className="blog-imge" />
-                </div>
-                <div className="card-body">
-                    <div className="card-text">
-                        <Link to={to} className="custom-link">{title}</Link>  
-                    </div>
+        <div className="card">
+            <div className="card-header text-center">
+                <img src={"static/"+src} alt={title} className="blog-imge" />
+            </div>
+            <div className="card-body">
+                <div className="card-text">
+                    <Link to={to} className="custom-link">{title}</Link>  
                 </div>
             </div>
+        </div>
     );
 }
 

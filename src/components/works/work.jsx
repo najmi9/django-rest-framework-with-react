@@ -2,6 +2,7 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 
 const Work = ({images, text, title, tags=[], date, link="#"}) => {
+    images = images.map(img => (`static/${img}`));
 	return(
 		<div className="card">
             <div className="card-header">
@@ -17,14 +18,14 @@ const Work = ({images, text, title, tags=[], date, link="#"}) => {
                     </div> 
                     <div className="tags">
                         {
-                            tags.map(e => (<span className="tag">
+                            tags.map((e, i) => (<span key={i} className="tag">
                                 <i className="fas fa-tags"></i>{e} 
                             </span>
                             ))
                         }
                     </div>
                     <i className="fas fa-clock"></i>
-                    <time datetime="2016-1-1">{ date }</time>
+                    <time dateTime="2019-10-01">{ date }</time>
                 </div>
             </div>
         </div>

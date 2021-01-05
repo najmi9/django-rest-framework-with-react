@@ -17,7 +17,7 @@ const Aboutme = ({ history }) => {
                     </div>
                     <div className="card-body">
                         <div className="card-image mb-2">
-                            <Media media="imgs/me.jpg" className="rounded-circle" width="150" height="150" alt="Imad Najmi" />
+                            <Media media="static/imgs/me.jpg" className="rounded-circle" width="150" height="150" alt="Imad Najmi" />
                         </div>
                         <div className="card-text bg-light rounded p-2">
                                 Hi, I am IMAD NAJMI, I am a web developer, my favorite framworks are Symfony php

@@ -9,10 +9,12 @@ import OpenSSH from './open_ssh';
 import WebScraping from './web_scraping'
 import ReactBlog from './react_blog'
 import FacebookPost from './fc_automate_posts'
+import DoctrineCache from './doctrine_cache';
 
 const StaticRoutes = () => {
   return (
     <>
+        <Route path="/doctrine-orm-second-level-cache" component={DoctrineCache} />
         <Route path="/django-demo-app" component={Django} />
         <Route path="/math-for-developers" component={DeveloperMath} />
         <Route path="/mercure-protocol-with-symfony" component={Mercure} />

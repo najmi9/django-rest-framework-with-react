@@ -36,7 +36,6 @@ const App = () => {
         { /*<Route path="/courses/" component= { Courses }  /> */}
         <Route path="/my-works/" component= { Works }  />
         <Route path="/contact/" component= { Contact }  />
-        <Route  component= { Error404 }  />
         <StaticRoutes />
       </Switch>
       <Footer />
