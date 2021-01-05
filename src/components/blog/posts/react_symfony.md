@@ -2,7 +2,7 @@
 How to create mrdern website with Symfony Api-Platform and React JS?
 </h2>
 <div class="text-center">
-<img src="imgs/symfony-react.png" alt="Symfony React Api Platform">
+<img src="static/imgs/symfony-react.png" alt="Symfony React Api Platform">
 </div>
 
 ### Prerequisites :

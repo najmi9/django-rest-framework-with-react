@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Media from '../components/course/media';
 
-const Aboutme = ({ history }) => {
+const Aboutme = () => {
 
     return (
     <section className="d-flex justify-content-center align-items-center">
@@ -10,7 +10,7 @@ const Aboutme = ({ history }) => {
             <title>najmi-imad.com| About me</title>
         </Helmet>
         <div className="row">
-            <div class="col-lg-6">
+            <div className="col-lg-6">
                 <div className="card container">
                     <div className="shadow-lg bg-white p-2 my-3 text-success font-weight-bolder h4">
                         About Me :
@@ -27,9 +27,9 @@ const Aboutme = ({ history }) => {
                             responsive websites
                             using bootstrap and other css frameworks depending on the  needs of the clients.
                             <p>
-                                You can see my Upwork profile
-                                <a href="https://www.upwork.com/freelancers/~01a391792ec0fb762e">@najmi.</a>
-                                for more informations.
+                            You can see my Upwork profile
+                            <a href="https://www.upwork.com/freelancers/~01a391792ec0fb762e">@najmi.</a>
+                            for more informations.
                             </p>
                         </div>
                     </div>

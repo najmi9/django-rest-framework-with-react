@@ -16,7 +16,7 @@ Finaly, we will have a simple home page contains two links to two posts. each po
 You can check the source code on [github](https://github.com/najmi9/react-blog-syntaxhilighter) directly.
 
 <div class="text-center">
-<img src="imgs/demo.png" class="img">
+<img src="static/imgs/demo.png" class="img">
 </div>
 
 ## 2.Installation : 
@@ -28,7 +28,7 @@ cd my-blog
 
 ### 3. The sturcture of folders :
 <div class="text-center">
-<img src="imgs/dirs.png" class="dirs">
+<img src="static/imgs/dirs.png" class="dirs">
 <div>
 
 First, let's create a new folder `pages` contains all pages, then create a home page file called `home.jsx` contains the code below : 

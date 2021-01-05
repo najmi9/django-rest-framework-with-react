@@ -19,7 +19,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { setup } from './service/AuthAPI';
 import './styles/all.css';
-import Error404 from './errors/error404';
+//import Error404 from './errors/error404';
 
 setup();
 const App = () => {

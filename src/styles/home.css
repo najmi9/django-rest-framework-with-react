@@ -37,7 +37,6 @@
 }
 
 .my-name{
-	margin-top: 10;
 	padding: 0;
 	animation: slidein 1s linear 1;
 	background-color: rgba(0, 0, 0, 0.1);
