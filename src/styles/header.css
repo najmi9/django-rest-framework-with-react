@@ -7,7 +7,7 @@ nav {
 .custom-nav-link:hover{
   padding: 5px;
   border-radius: 5px;
-  transition: all 0.5s;
+  transition: all 0.2s;
   background-color: #ae5fce;
 }
 
@@ -19,7 +19,7 @@ nav {
   padding:5px;
   border-radius: 5px;
   background-color: #ae5fce;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .nav-links {
@@ -80,7 +80,7 @@ nav {
     flex-direction: column;
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
@@ -99,19 +99,19 @@ nav {
     font-size: 25px;
   }
   .nav-links li:nth-child(1) {
-    transition: all 0.5s ease 0.1s;
+    transition: all 0.2s ease 0.1s;
   }
   .nav-links li:nth-child(2) {
-    transition: all 0.5s ease 0.2s;
+    transition: all 0.2s ease 0.2s;
   }
   .nav-links li:nth-child(3) {
-    transition: all 0.5s ease 0.3s;
+    transition: all 0.2s ease 0.3s;
   }
    .nav-links li:nth-child(4) {
-    transition: all 0.5s ease 0.4s;
+    transition: all 0.2s ease 0.4s;
   }
    .nav-links li:nth-child(5) {
-    transition: all 0.5s ease 0.5s;
+    transition: all 0.2s ease 0.5s;
   }
 
   .custom-nav-link.fade {
