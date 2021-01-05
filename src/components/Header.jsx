@@ -7,35 +7,15 @@ const Header = () => {
         e.preventDefault();
         document.querySelector('.nav-links .custom-active').classList.remove('custom-active')
         e.currentTarget.classList.add('custom-active');
+        const navLinks = document.querySelector(".nav-links");
+        if (navLinks.classList.contains('open')) {
+            navLinks.classList.remove('open');
+            const links = document.querySelectorAll(".nav-links li");
+                links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+        }
     }
-
-    const x = (
-        <header>
-            <input type="checkbox" id="check" />
-            <label htmlFor="check" className="checkbtn">
-                <i className="fas fa-bars"></i>
-            </label>
-            <label className="logo fire">Imad Najmi</label>
-            <ul>
-                <li>
-                    <Link className="active js-link" to="/" onClick={handleClick}>Home</Link>
-                </li>
-                <li>
-                    <Link to="/about-me" className="js-link" onClick={handleClick}>About</Link>
-                </li>
-                <li>
-                    <Link to="blog" className="js-link" onClick={handleClick}>Articles</Link>
-                </li>
-                <li>
-                    <Link to="/contact" className="js-link" onClick={handleClick}>Contact</Link>
-                </li>
-                <li>
-                    <Link to="/my-works" className="js-link" onClick={handleClick}>Works</Link>
-                </li>
-            </ul>
-        </header>
-
-    );
 
     const handleHamburgerClick = e => {
         const navLinks = document.querySelector(".nav-links");

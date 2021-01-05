@@ -5,12 +5,12 @@ import MarkDown from '../../components/blog/markdown-parser/MarkDown';
 
 const Express = () => {
     return (
-        <div className="main">
+        <section>
             <Helmet>
                 <title>najmi-imad.com| Express and Sequelize Application</title>
             </Helmet>
             <MarkDown content={content} />
-        </div>
+        </section>
     );
 };
 

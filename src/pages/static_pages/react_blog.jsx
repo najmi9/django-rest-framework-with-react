@@ -5,12 +5,12 @@ import MarkDown from '../../components/blog/markdown-parser/MarkDown';
 
 const ReactBlog = ({ className }) => {
     return (
-        <div className="main">
+        <section>
             <Helmet>
                 <title>najmi-imad.com| Create React Markdown blog with highlight code</title>
             </Helmet>
             <MarkDown content={content} />
-        </div>
+        </section>
     );
 };
 

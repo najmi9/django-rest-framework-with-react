@@ -5,12 +5,12 @@ import MarkDown from '../../components/blog/markdown-parser/MarkDown';
 
 const SymfonyReact = () => {
     return (
-        <div className="main">
+        <section>
             <Helmet>
                 <title>najmi-imad.com| React in Symfony Project</title>
             </Helmet>
             <MarkDown content={content} />
-        </div>
+        </section>
     );
 };
 

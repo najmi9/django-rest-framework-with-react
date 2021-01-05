@@ -1,4 +1,4 @@
-<h2 class="mt-2 rounded shadow-lg p-3 text-primary text-center">
+<h2 class="article-title">
  How to Create a Technical Blog by using React, Markdown and Syntax Highlighter Code ?
 </div>
 

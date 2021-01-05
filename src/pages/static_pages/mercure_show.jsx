@@ -7,12 +7,12 @@ import MarkDown from '../../components/blog/markdown-parser/MarkDown';
 
 const Mercure = () => {
     return (
-        <div className="main">
+        <section>
             <Helmet>
                 <title>najmi-imad.com| Using Mercure in Symfony and Api Platform</title>
             </Helmet>
             <MarkDown content={content} />
-        </div>
+        </section>
     );
 }
 export default Mercure;

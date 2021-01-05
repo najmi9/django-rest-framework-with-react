@@ -5,12 +5,12 @@ import MarkDown from '../../components/blog/markdown-parser/MarkDown';
 
 const OpenSSH = () => {
     return (
-        <div className="main">
+        <section>
             <Helmet>
                 <title>najmi-imad.com| Open SSH Connection on Linux</title>
             </Helmet>
             <MarkDown content={content} />
-        </div>
+        </section>
     );
 };
 

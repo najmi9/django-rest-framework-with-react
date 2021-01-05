@@ -1,4 +1,4 @@
-<h2 class="mt-2 rounded shadow-lg p-3 text-primary text-center">
+<h2 class="article-title">
 Mercure Protocol With Symfony and Api Platform
 </div>
 

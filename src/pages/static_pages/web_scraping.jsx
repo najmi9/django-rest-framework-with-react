@@ -5,12 +5,12 @@ import MarkDown from '../../components/blog/markdown-parser/MarkDown';
 
 const WebScraping = () => {
     return (
-        <div className="main">
+        <section>
             <Helmet>
                 <title>najmi-imad.com| Web Scraping With Python</title>
             </Helmet>
             <MarkDown content={content} />
-        </div>
+        </section>
     );
 };
 

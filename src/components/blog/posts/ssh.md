@@ -1,4 +1,4 @@
-<h2 class="mt-2 rounded shadow-lg p-3 text-primary text-center">
+<h2 class="article-title">
 What is SSH, How it's work, How we can use it and How to secure a open SSH connection?
 </h2>
 

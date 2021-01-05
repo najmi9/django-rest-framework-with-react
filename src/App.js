@@ -20,8 +20,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { setup } from './service/AuthAPI';
 import './styles/all.css';
-
-
+import Error404 from './errors/error404';
 
 setup();
 const App = () => {
@@ -31,14 +30,14 @@ const App = () => {
       <Header />
       <Switch>        
         <Route path="/" component= { Home} exact />     
-        <Route path="/blog-:id" component= { PostDetails}  />
+        { /*<Route path="/blog-:id" component= { PostDetails}  /> */}
         <Route path="/about-me" component= { Aboutme}  />
         <Route path="/blog" component= { Blog}  />
-        <Route path="/courses-:slug" component= { Course }  />
-        <Route path="/courses/" component= { Courses }  />
+        { /*<Route path="/courses-:slug" component= { Course }  /> */}
+        { /*<Route path="/courses/" component= { Courses }  /> */}
         <Route path="/my-works/" component= { Works }  />
         <Route path="/contact/" component= { Contact }  />
-        <Route path="/bg/" component= { () => <div></div> }  />
+        <Route  component= { Error404 }  />
         <StaticRoutes />
       </Switch>
       <Footer />

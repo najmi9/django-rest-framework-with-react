@@ -77,7 +77,7 @@ const AsideBar = () => {
 const ArticleTitle = ({to, src, title}) => {
     return(
         
-            <div className="card" style={{ 'zIndex': -1 }}>
+            <div className="card">
                 <div className="card-header text-center">
                     <img src={src} alt={title} className="blog-imge" />
                 </div>

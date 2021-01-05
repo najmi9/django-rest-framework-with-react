@@ -1,4 +1,4 @@
-<h2 class="mt-2 rounded shadow-lg p-3 text-primary text-center">
+<h2 class="article-title">
 Create posts automatically on Facebook with Selenium and Python
 </h2>
 

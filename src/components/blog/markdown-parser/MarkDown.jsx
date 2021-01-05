@@ -26,7 +26,7 @@ const MarkDown = ({ content }) => {
     }, [content]);
 
     return (
-        <>
+        <article className="article">
             { !loading && (<Loader color="orange" />)}
             {loading && (
                 <div className="container">
@@ -38,7 +38,7 @@ const MarkDown = ({ content }) => {
                     />
                 </div>
             )}
-        </>
+        </article>
     );
 };
 
