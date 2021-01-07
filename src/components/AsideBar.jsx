@@ -78,6 +78,14 @@ const AsideBar = () => {
                 title="Doctrine ORM: Second Level Cache."
                 />
             </div>
+
+            <div className="col-lg-4 col-md-6 col-sm-12">
+                <ArticleTitle 
+                src="imgs/blog/messenger-symfony/cover.jpeg"
+                to="/symfony-messenger-queued-message-handling"
+                title="Messenger: Sync & Queued Message Handling."
+                />
+            </div>
         </div>
     );
 };

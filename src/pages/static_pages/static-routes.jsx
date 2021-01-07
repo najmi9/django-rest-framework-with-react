@@ -10,6 +10,7 @@ import WebScraping from './web_scraping'
 import ReactBlog from './react_blog'
 import FacebookPost from './fc_automate_posts'
 import DoctrineCache from './doctrine_cache';
+import MessengerSymfony from './messeneger-symfony';
 
 const StaticRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const StaticRoutes = () => {
         <Route path="/web-scraping" component={WebScraping} />
         <Route path="/react-markdown-syntaxhlighter" component={ReactBlog} />
         <Route path="/automate-publishing-posts-on-facbook" component={FacebookPost} />
+        <Route path="/symfony-messenger-queued-message-handling" component={MessengerSymfony} />
     </>
   );
 };
