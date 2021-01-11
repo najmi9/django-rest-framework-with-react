@@ -11,7 +11,6 @@ const MarkDown = ({ content }) => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-
         fetch(content)
             .then(res => res.text())
             .then(text => {

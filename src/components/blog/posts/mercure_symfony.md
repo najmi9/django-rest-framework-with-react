@@ -396,6 +396,20 @@ class Product
   //...
 }
 ```
+# Runnig Mercure in production
+
+```bash
+#apache web server 
+
+ProxyPass / http://myhub.com:3000/
+ProxyPassReverse / https://myhub.com/
+
+# in javascript
+new URL('https://www.example.com/hub/.well-known/mercure');
+
+#In symfony 
+MERCURE_PUBLISH_URL=https://www.example.com/hub/.well-known/mercure
+```
 
 
 

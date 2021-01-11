@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Loader from "../components/Loader";
-import AsideBar from "../components/AsideBar";
+import getPosts from "../components/blog/posts-data";
+import { Link } from 'react-router-dom';
 
-const Blog = ({ history }) => {
+import '../styles/blog.css';
+
+const Blog = () => {
+    const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        setLoading(true);
+        getPosts()
+        .then((res) => setPosts(res))
+        .then(() => setLoading(true))
     }, []);
 
     return (
@@ -17,12 +23,30 @@ const Blog = ({ history }) => {
             </Helmet>
             {!loading && <Loader />}
             {loading && (
-                <section className="container mt-5">
+                <div className="container mt-5">
                     <h2 className="text-danger bg-light border-bottom p-2">
                      List of Articles: 
                     </h2>
-                    <AsideBar />
-                </section>
+                    <div className="row d-felx justify-content-center align-items-center">
+                        { posts.map((post, index) => (
+                            <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
+                                <div className="card">
+                                    <div className="card-header text-center">
+                                        <img src={post.image} 
+                                        alt={post.title} className="blog-imge" />
+                                    </div>
+                                    <div className="card-body">
+                                        <div className="card-text">
+                                            <Link to={post.path} className="custom-link">
+                                                {post.title}
+                                            </Link>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )) }
+                    </div>
+                </div>
             )}
         </section>
     );

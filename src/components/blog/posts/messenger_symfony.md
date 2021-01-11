@@ -1,5 +1,5 @@
 <h2 class="article-title">
-Messenger: Sync & Queued Message Handling
+Symfony Messenger: Supervisor Configuration In Production Enviroment
 </h2>
 
 # Table of Content:
@@ -200,6 +200,6 @@ sudo supervisorctl start messenger-consume:*
 
 # Usefull Links:
 
-1- [Symfonycasts](https://symfonycasts.com/screencast/messenger/deploy)
-2- [Symfony Docs](https://symfony.com/doc/current/messenger.html#consuming-messages-running-the-worker)
-3- [Supervisor Configuration](https://symfony.com/doc/current/messenger.html#messenger-supervisor)
+1. [Symfonycasts](https://symfonycasts.com/screencast/messenger/deploy)
+2. [Symfony Docs](https://symfony.com/doc/current/messenger.html#consuming-messages-running-the-worker)
+3. [Supervisor Configuration](https://symfony.com/doc/current/messenger.html#messenger-supervisor)
