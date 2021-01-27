@@ -1,7 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import '../styles/contact.css';
 import { createContact } from '../service/ContactAPI';
-import Swal from 'sweetalert2'
 import Loader from '../components/Loader';
 import { toast } from 'react-toastify';
 

@@ -28,7 +28,8 @@ Notice that when caching collection and queries only identifiers are stored. The
 
 - **READ_WRITE** :  the slowest one, able to perform updates and locks and the only we can use when implementing a custom region
 
-In this article we will use just the first caching mode.
+In this article we will use just the second caching mode.
+If use the first mode and when you update the entity you ganna have an error taht say you can not update the cache with the mode readonly
 
 ### Integraction with Symfony
 
@@ -86,14 +87,14 @@ use Doctrine\ORM\Mapping\Cache;
 /**
  * @ORM\Entity(repositoryClass=LikeRepository::class)
  * @ORM\Table(name="`like`")
- * @Cache('READ_ONLY', region='my_entity_region')
+ * @Cache('NONSTRICT_READ_WRITE', region='my_entity_region')
  */
 class Like
 {
 	# ...
 
 	 /**
-     * @Cache
+     * @Cache('NONSTRICT_READ_WRITE')
      * @ManyToOne(targetEntity="User")
      * @JoinColumn(name="user_id", referencedColumnName="id")
      */
