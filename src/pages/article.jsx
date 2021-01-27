@@ -66,6 +66,10 @@ const Article = ({ match }) => {
 			title: "Usefull Linux Commands",
 			content: LinuxCommands
 		},
+		"react-markdown-syntaxhlighter" : {
+			title: "How to Create a Technical Blog by using React, Markdown and Syntax Highlighter Code ?",
+			content: ReactBlog
+		}
 
 	};
 

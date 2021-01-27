@@ -3,7 +3,7 @@ import ImageGallery from 'react-image-gallery';
 
 const Work = ({images, text, title, tags=[], date, link="#"}) => {
 
-    images = images.map(img => ({original: `static/${img.original}`}));
+    //images = images.map(img => ({original: `static/${img.original}`}));
     
 	return(
 		<div className="card">

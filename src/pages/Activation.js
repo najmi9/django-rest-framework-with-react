@@ -29,8 +29,7 @@ const Activation = ({ history }) => {
                 const { violations } = e.response.data;
                 if (violations) {
                     violations.forEach(violation => {
-                        document.querySelector("input[name=" + violation.propertyPath + "]").classList.add('is-invalid')
-                        apiErrors[violation.propertyPath] = violation.message;
+                       // reduce
                     });
                 }
                 if (e.response.data.message) {

@@ -9,15 +9,15 @@ const Aboutme = () => {
         <Helmet>
             <title>najmi-imad.com| About me</title>
         </Helmet>
-        <div className="row">
+        <div className="row container">
             <div className="col-lg-6">
-                <div className="card container">
-                    <div className="shadow-lg bg-white p-2 my-3 text-success font-weight-bolder h4">
+                <div className="card">
+                    <div className="bg-white p-2 my-3 text-success font-weight-bolder h4">
                         About Me :
                     </div>
                     <div className="card-body">
                         <div className="card-image mb-2">
-                            <Media media="static/imgs/me.jpg" className="rounded-circle" width="150" height="150" alt="Imad Najmi" />
+                            <Media media="imgs/me.jpg" className="rounded-circle" width="150" height="150" alt="Imad Najmi" />
                         </div>
                         <div className="card-text bg-light rounded p-2">
                                 Hi, I am IMAD NAJMI, I am a web developer, my favorite framworks are Symfony php
@@ -63,7 +63,7 @@ const Aboutme = () => {
             </div>
 
             <div className="col-lg-6">
-                <h4 className="shadow-lg bg-white p-2 my-3 text-success font-weight-bolder"> My knowledge is in these technologies :</h4>
+                <h4 className="bg-white p-2 my-3 text-success font-weight-bolder"> My knowledge is in these technologies :</h4>
                 <div className="skills-container container font-weight-bolder">
                     <div className="skills shadow-lg p-3 mb-2 bg-white rounded">
                         <i className="fas fa-code text-warning"></i> HTML, CSS and Bootstrap. 

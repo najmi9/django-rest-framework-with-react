@@ -6,6 +6,7 @@ import VertimeWebsite from '../components/works/vertime-website';
 import Api from '../components/works/api';
 import Gvet from '../components/works/gvet';
 import ShopSymfony from '../components/works/shop-symfony';
+import Chat from '../components/works/chat';
 import '../styles/works.css';
 
 const Works = () => {
@@ -20,6 +21,9 @@ const Works = () => {
                 style={{ 'fontWeight': 'bolder' }}>
                     List of my works :
                 </h1>
+                    <div className="work">
+                        <Chat />
+                    </div>
                     <div className="work">
                         <ReactShop />
                     </div>

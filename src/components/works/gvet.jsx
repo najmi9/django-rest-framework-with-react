@@ -22,7 +22,7 @@ const Gvet = () => {
             images={images}
             title="Software of veterinaries managment"
             link='https://beta.gvetsoft.com/'
-            tags={['Symfony', 'Twig', 'Doctrine ORM', 'Messeger', 'Bootstrap', 'Mercure', 
+            tags={['Symfony', 'Twig', 'Doctrine ORM', 'Messenger', 'Bootstrap', 'Mercure', 
             'Doctrine Second level cache', 'Redis', 'Chart js', 'Apis', 'HttpFoundation Bundle']}
             date="16:25 11/01/2020"
             text="The website is about comprehensive management Software for clinics and 
