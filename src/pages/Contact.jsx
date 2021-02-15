@@ -1,8 +1,9 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/contact.css';
 import { createContact } from '../service/ContactAPI';
 import Loader from '../components/Loader';
 import { toast } from 'react-toastify';
+import Footer from '../components/Footer';
 
 const Contact = () => {
 	const [loading, setloading] = useState(false)
@@ -40,34 +41,38 @@ const Contact = () => {
 	}
 
 	return (
-		<section className="container">
-			{ loading ? <Loader /> : <div className="custom-form mt-5">
-				<h4 className="bg-light rounded p-2 text-success"> Contact me: </h4>
-				<div className="bg-light rounded p-4 t">
-					<form method="post" onSubmit={handleSubmit}>
-						<div className="form-group mb-3">
-							<label htmlFor="email"> Email :  </label>
-							<input className="form-control" type="email" name="email" value={data.email}
-								placeholder="Email" id="email"
-								required onChange={handleChange}
-							/>
-						</div>
-						<div className="form-group mb-3">
-							<label htmlFor="message"> Message :  </label>
-							<textarea className="form-control"
-								onChange={handleChange} value={data.message}
-								name="message" id="message" placeholder="Type here your message" required>
-							</textarea>
-						</div>
-						<div className="form-group">
-							<button className="btn btn-success btn-md" disabled={loading}>
-								<i className="fas fa-paper-plane"></i> Send
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>}
-		</section>
+        <>
+            <section className="container">
+                { loading ? <Loader /> : <div className="custom-form mt-5">
+                    <h4 className="bg-light rounded p-2 text-success"> Contact me: </h4>
+                    <div className="bg-light rounded p-4 t">
+                        <form method="post" onSubmit={handleSubmit}>
+                            <div className="form-group mb-3">
+                                <label htmlFor="email"> Email :  </label>
+                                <input className="form-control" type="email" name="email" value={data.email}
+                                    placeholder="Email" id="email"
+                                    required onChange={handleChange}
+                                />
+                            </div>
+                            <div className="form-group mb-3">
+                                <label htmlFor="message"> Message :  </label>
+                                <textarea className="form-control"
+                                    onChange={handleChange} value={data.message}
+                                    name="message" id="message" placeholder="Type here your message" required>
+                                </textarea>
+                            </div>
+                            <div className="form-group">
+                                <button className="btn btn-success btn-md" disabled={loading}>
+                                    <i className="fas fa-paper-plane"></i> Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>}
+		    </section>
+            <Footer />
+        </>
+		
 	);
 }
 

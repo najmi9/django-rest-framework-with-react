@@ -32,7 +32,7 @@ const App = () => {
                 <Route path="/contact" component={Contact} />
                 <Route component={Error404} />
             </Switch>
-            <Footer />
+
             <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
         </Router>
 

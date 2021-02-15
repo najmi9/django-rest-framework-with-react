@@ -29,7 +29,7 @@ Notice that when caching collection and queries only identifiers are stored. The
 - **READ_WRITE** :  the slowest one, able to perform updates and locks and the only we can use when implementing a custom region
 
 In this article we will use just the second caching mode.
-If use the first mode and when you update the entity you ganna have an error taht say you can not update the cache with the mode readonly
+If use the first mode and when you update the entity you get an error taht say you can not update the cache with the mode readonly.
 
 ### Integraction with Symfony
 

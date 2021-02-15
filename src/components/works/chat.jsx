@@ -11,7 +11,7 @@ const Chat = () => {
         <Work 
             images={images}
             title="Real Time Chat"
-            link='https://beta.gvetsoft.com/'
+            link='https://github.com/najmi9/mercure_symfony_blog'
             tags={['Symfony', 'Twig', 'Doctrine ORM', 'Messenger', 'Bootstrap', 'Mercure', 'React', 'SSE']}
             date="22:25 10/01/2021"
             text="Real time chat with Mercure and React, so any user can create a converation and

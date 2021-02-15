@@ -1,0 +1,31 @@
+/** text animation */
+
+.title {
+    opacity: 0;
+    max-width: 320px;
+    font-weight: bolder;
+    font-size: 50px;
+    color:#004C93;
+}
+
+.title span {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 0.8;
+}
+
+.title span span {
+    display: block;
+    animation: titleReveal .7s both;
+}
+
+@keyframes titleReveal {
+    from {
+        opacity: 0; 
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

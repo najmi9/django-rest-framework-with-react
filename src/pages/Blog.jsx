@@ -5,6 +5,7 @@ import getPosts from "../components/blog/posts-data";
 import { Link } from 'react-router-dom';
 
 import '../styles/blog.css';
+import Footer from "../components/Footer";
 
 const Blog = () => {
     const [posts, setPosts] = useState([]);
@@ -16,7 +17,7 @@ const Blog = () => {
         .then(() => setLoading(true))
     }, []);
 
-    return (
+    return (<>
         <section>
             <Helmet>
                 <title>najmi-imad.com| My Blog</title>
@@ -49,6 +50,8 @@ const Blog = () => {
                 </div>
             )}
         </section>
+         <Footer />
+         </>
     );
 };
 export default Blog;

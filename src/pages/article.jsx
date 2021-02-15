@@ -17,6 +17,7 @@ import MessengerSymfony from '../components/blog/posts/messenger_symfony.md';
 import LinuxCommands from '../components/blog/posts/linux-tuto.md';
 
 import Error404 from '../errors/error404';
+import Footer from '../components/Footer';
 
 const Article = ({ match }) => {
 	const { slug } = match.params;
@@ -78,12 +79,13 @@ const Article = ({ match }) => {
 	}
 
 	return (
-		<section>
+            <section>
 	        <Helmet>
 	            <title> { slugs[slug].title } </title>
 	        </Helmet>
 	        <MarkDown content={slugs[slug].content} />
     	</section>
+       
 	);
 }
 

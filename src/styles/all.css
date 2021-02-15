@@ -33,7 +33,7 @@ svg{
 }
 
 /** making element selection with  different color*/
-p::selection, h2::selection, div::selection, h3::selection{
+*::selection {
 	background-color: rgb(124, 51, 131);
 	color: white;
 }

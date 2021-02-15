@@ -4,7 +4,7 @@ import '../styles/footer.css';
 
 const Footer = () => {
     return (
-        <footer className="row d-flex justify-content-center align-items-center">
+        <footer style={{backgroundColor: '#00376B'}} className="row d-flex justify-content-center align-items-center">
             <div className="mt-2 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                 <a href={FACEBOOK} rel="noopener noreferrer" target="_blank" title="Facebook"><i className="fab fa-facebook"></i></a>
                 <a href={GITHUB} rel="noopener noreferrer" target="_blank" title="Github"> <i className="fab fa-github"></i></a>

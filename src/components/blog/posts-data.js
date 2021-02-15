@@ -44,7 +44,7 @@ const getPosts = async () => [
         path: "/blog/symfony-messenger-supervisor-configuration",
         title: "Symfony Messenger: Supervisor Configuration In Production Enviroment"
     },
-    {
+    /*{
     	image: "http://picsum.photos",
     	path: "/blog/math-for-developers",
     	title: "What are the math concepts  I should know it as a developer ?"
@@ -59,7 +59,7 @@ const getPosts = async () => [
         path: "/blog/usefull-linux-commands",
         title: "Usefull Linux Commands"
     },
-    /*{
+    {
         image: "",
         path: "",
         title: ""

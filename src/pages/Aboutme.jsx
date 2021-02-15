@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Media from '../components/course/media';
+import Footer from '../components/Footer';
 import '../styles/about.css';
 
 const Aboutme = () => {
@@ -15,7 +16,7 @@ const Aboutme = () => {
         { id: 8, icon: 'fas fa-server text-primary', name:'Linux and Redis server.'}
     ];
     
-    return (
+    return (<>
     <section className="d-flex justify-content-center align-items-center">
         <Helmet>
             <title>najmi-imad.com| About me</title>
@@ -84,7 +85,9 @@ const Aboutme = () => {
                 </div>
             </div>
         </div>
-    </section>);
+    </section>
+    <Footer />
+    </>);
 };
 
 export default Aboutme;

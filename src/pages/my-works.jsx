@@ -22,9 +22,6 @@ const Works = () => {
                     List of my works :
                 </h1>
                     <div className="work">
-                        <Chat />
-                    </div>
-                    <div className="work">
                         <ReactShop />
                     </div>
                      <div className="work">
@@ -41,6 +38,9 @@ const Works = () => {
                     </div>
                     <div className="work">
                         <VertimeWebsite />
+                    </div>
+                    <div className="work">
+                        <Chat />
                     </div>
             </div>
         </section>
