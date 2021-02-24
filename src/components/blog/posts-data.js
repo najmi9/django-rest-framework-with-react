@@ -44,6 +44,11 @@ const getPosts = async () => [
         path: "/blog/symfony-messenger-supervisor-configuration",
         title: "Symfony Messenger: Supervisor Configuration In Production Enviroment"
     },
+    {
+        image: "imgs/blog/logo-linux.jpg",
+        path: "/blog/usefull-linux-commands",
+        title: "Usefull Linux Commands"
+    },
     /*{
     	image: "http://picsum.photos",
     	path: "/blog/math-for-developers",
@@ -53,11 +58,6 @@ const getPosts = async () => [
     	image: "http://picsum.photos",
     	path: "/blog/node-express-app",
     	title: "Hello World Express application using Sequelize ?"
-    },
-    {
-        image: "/imgs/blog/usefull-linux-commands.png",
-        path: "/blog/usefull-linux-commands",
-        title: "Usefull Linux Commands"
     },
     {
         image: "",

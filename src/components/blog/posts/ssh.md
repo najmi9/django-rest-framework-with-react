@@ -2,14 +2,6 @@
 What is SSH, How it's work, How we can use it and How to secure a open SSH connection?
 </h2>
 
-## table of content : 
-  - [table of content :](#table-of-content-)
-  - [0. Inroduction :](#0-inroduction-)
-  - [1. How does SSH Work?](#1-how-does-ssh-work)
-  - [3. Installation of  SSH](#3-installation-of-ssh)
-  - [4. How to Open SSH Connection?](#4-how-to-open-ssh-connection)
-  - [5. How to Secure an Open SSH Connection?](#5-how-to-secure-an-open-ssh-connection)
-
 ## 0. Inroduction :
 
 Accessing to machines remotely became a necessity a   long time ago and we can barely imagine how it would be if couldn't control computers from remote locations.

@@ -140,7 +140,7 @@ So Now if you call any method from the `LikeRepository` the doctrine hit databas
 ```
 
 <div class="text-center">
-	<img src="static/imgs/blog/doctrine-cache/no-query.png" style="max-height: 500px; max-width: 600px;" alt="doctrine second level cache in symfony">
+	<img src="/imgs/blog/doctrine-cache/no-query.png" style="max-height: 500px; max-width: 600px;" alt="doctrine second level cache in symfony">
 </div>
 
 ####  How to clear and invalidate the cache?

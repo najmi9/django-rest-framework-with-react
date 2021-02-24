@@ -6,6 +6,7 @@ import '../styles/anim-title.css';
 import App from '../svg/bg';
 import Man from '../svg/man';
 import   animateTitle from  '../lib/anim-word';
+import { Link } from 'react-router-dom';
 
 ReactGA.initialize('641476067204-k3tihppcn56nnolueestq7qn0seu2pbh.apps.googleusercontent.com');
 
@@ -29,7 +30,10 @@ const Home = () => {
                        </div>
                 <div class="container d-flex justify-content-center align-items-center">
                 <h4 class="title">Hi, I’m IMAD NAJMI, I’m A FullStack Developer</h4>
-                
+                <Link to="/send-project-details" className="btn btn-success btn-lg">
+
+                    Send Your Project Description
+                </Link>
                 </div>
             </section>
             <footer>

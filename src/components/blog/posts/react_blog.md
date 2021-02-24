@@ -130,29 +130,23 @@ In a folder called `posts` in `src` dirctory we are going to create two files `p
 
 in `src/posts/post1.md` copy and paste this code :
 
-```md
+```
 # This is the title of the post 1
 
-\`\`\`jsx
 //example of jsx code
 import React from 'react';
 const id = "id";
 const div = <div id={id} />
 const App = () => "row function"
-\`\`\`
 
-\`\`\`php
 //example of php code
 $table = [];
 $table[] = 'Hi';
-echo "Hello World" + count($table);
-\`\`\`
+#echo "Hello World" + count($table);
 
-\`\`\`python
 #example of python code
 def index():
 	[ print(i) for i in range(10) ]
-\`\`\`
 ```
 
 The last Step is to create a component that take the markdown to parse it to html, so create a folder `components` folder in `src` dirctory and also those two files :

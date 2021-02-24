@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import MarkDown from '../components/blog/markdown-parser/MarkDown';
-
 import ReactBlog from '../components/blog/posts/react_blog.md';
 import Django from '../components/blog/posts/django_api.md';
 import DeveloperMath from '../components/blog/posts/math_for_developers.md'
@@ -14,7 +13,7 @@ import WebScraping from '../components/blog/posts/web_scraping.md'
 import FacebookPost from '../components/blog/posts/fc_automate_post.md'
 import DoctrineCache from '../components/blog/posts/doctrine_cache.md';
 import MessengerSymfony from '../components/blog/posts/messenger_symfony.md';
-import LinuxCommands from '../components/blog/posts/linux-tuto.md';
+import LinuxCommands from '../components/blog/posts/linux-commands.md';
 
 import Error404 from '../errors/error404';
 import Footer from '../components/Footer';
@@ -78,15 +77,15 @@ const Article = ({ match }) => {
 		return <Error404 />;
 	}
 
-	return (
-            <section>
+	return (<>
+        <section className="main-blog">
 	        <Helmet>
 	            <title> { slugs[slug].title } </title>
 	        </Helmet>
 	        <MarkDown content={slugs[slug].content} />
     	</section>
-       
-	);
+        <Footer />
+    </>);
 }
 
 export default Article;

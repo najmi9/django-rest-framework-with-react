@@ -1,7 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
 import Aboutme from './pages/Aboutme';
-import Footer from './components/Footer';
 import Blog from './pages/Blog';
 import Article from './pages/article';
 import Works from './pages/my-works';
@@ -17,6 +16,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { setup } from './service/AuthAPI';
 import './styles/all.css';
 import Error404 from './errors/error404';
+import ProjectDetails from './pages/send_project/SendProjectDetails';
 
 setup();
 const App = () => {
@@ -30,6 +30,7 @@ const App = () => {
                 <Route path="/blog" component={Blog} />
                 <Route path="/my-works/" component={Works} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/send-project-details" component={ProjectDetails} />
                 <Route component={Error404} />
             </Switch>
 
