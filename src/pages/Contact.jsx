@@ -43,7 +43,7 @@ const Contact = () => {
 	return (
         <>
             <section className="container">
-                { loading ? <Loader /> : <div className="custom-form mt-5">
+                { loading ? <Loader /> : <div id="contact" className="custom-form">
                     <h4 className="bg-light rounded p-2 text-success"> Contact me: </h4>
                     <div className="bg-light rounded p-4 t">
                         <form method="post" onSubmit={handleSubmit}>

@@ -4,3 +4,13 @@
 		max-width: 700px;
 	}
 }
+
+#contact{
+    margin-top: 5vh;
+}
+
+@media screen and (min-height: 800px) {
+    #contact{
+        margin-top: 18vh;
+    }
+}

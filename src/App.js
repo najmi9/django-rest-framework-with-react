@@ -17,6 +17,9 @@ import { setup } from './service/AuthAPI';
 import './styles/all.css';
 import Error404 from './errors/error404';
 import ProjectDetails from './pages/send_project/SendProjectDetails';
+import Physique from './pages/Physique';
+
+import './styles/mobile.css';
 
 setup();
 const App = () => {
@@ -31,6 +34,7 @@ const App = () => {
                 <Route path="/my-works/" component={Works} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/send-project-details" component={ProjectDetails} />
+                <Route path="/physics" component={Physique} />
                 <Route component={Error404} />
             </Switch>
 

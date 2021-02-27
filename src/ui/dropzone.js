@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-
 import '../styles/dropzone.css';
 
 export default function DropZone({image , url, setImage}) {

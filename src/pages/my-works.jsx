@@ -21,26 +21,28 @@ const Works = () => {
                 style={{ 'fontWeight': 'bolder' }}>
                     List of my works :
                 </h1>
-                    <div className="work">
+                    <div className="row">
+                    <div className="work  col-lg-6">
                         <ReactShop />
                     </div>
-                     <div className="work">
+                     <div className="work  col-lg-6">
                         <ShopSymfony />
                     </div>
-                    <div className="work">
+                    <div className="work  col-lg-6">
                         <Calculators />
                     </div>
-                    <div className="work">
+                    <div className="work  col-lg-6">
                         <Gvet />
                     </div>
-                    <div className="work">
+                    <div className="work col-lg-6">
                         <Api />
                     </div>
-                    <div className="work">
+                    <div className="work  col-lg-6">
                         <VertimeWebsite />
                     </div>
-                    <div className="work">
+                    <div className="work  col-lg-6">
                         <Chat />
+                    </div>
                     </div>
             </div>
         </section>

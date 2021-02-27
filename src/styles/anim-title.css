@@ -2,15 +2,15 @@
 
 .title {
     opacity: 0;
-    max-width: 320px;
+    /* max-width: 320px; */
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 3em;
     color:#004C93;
 }
 
 .title span {
     display: inline-block;
-    overflow: hidden;
+    /* overflow: hidden; */
     line-height: 0.8;
 }
 
@@ -28,4 +28,30 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes man {
+    from {
+        opacity: 0; 
+        transform: translateX(70%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.more svg{
+    width: 40px;
+    height: 30px;
+}
+.more{
+    opacity: 0;
+   
+    animation: titleReveal 1s both;
+}
+
+.mansite{
+    opacity: 0;
+    animation: man 1.5s both;
 }

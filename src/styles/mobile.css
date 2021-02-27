@@ -7,5 +7,42 @@
 }
 
 @media (max-width: 570px){
+   
+    .title {
+        opacity: 0;
+        /* max-width: 320px; */
+        font-weight: bolder;
+        font-size: 1.5em;
+        color:#004C93;
+    }
 
+    .mansite{
+        position: relative;
+        top: 10em;
+        left: -10px;
+        max-width: 600px;
+        max-height: 600px;
+    }
+     
 }
+/* 
+@media (min-width: 640px){
+ 
+    }
+     
+    @media (min-width: 768px){
+     
+  
+     
+    }
+     
+    @media (min-width: 1024px){
+     
+  
+    }
+     
+    @media (min-width: 1200px){
+     
+   
+     
+    } */
