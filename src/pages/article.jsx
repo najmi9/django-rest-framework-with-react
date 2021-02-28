@@ -14,6 +14,7 @@ import FacebookPost from '../components/blog/posts/fc_automate_post.md'
 import DoctrineCache from '../components/blog/posts/doctrine_cache.md';
 import MessengerSymfony from '../components/blog/posts/messenger_symfony.md';
 import LinuxCommands from '../components/blog/posts/linux-commands.md';
+import Algolia from '../components/blog/posts/algolia.md';
 
 import Error404 from '../errors/error404';
 import Footer from '../components/Footer';
@@ -69,6 +70,10 @@ const Article = ({ match }) => {
 		"react-markdown-syntaxhlighter" : {
 			title: "How to Create a Technical Blog by using React, Markdown and Syntax Highlighter Code ?",
 			content: ReactBlog
+		},
+        "algolia-with-symfony" : {
+			title: "Impelementaion Of algolia Search With symfony 5",
+			content: Algolia
 		}
 
 	};

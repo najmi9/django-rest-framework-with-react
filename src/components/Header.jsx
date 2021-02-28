@@ -44,7 +44,7 @@ const Header = () => {
             <Link to="/contact" className="custom-nav-item">Contact</Link>
         </li>
         <li  onClick={handleClick} className="custom-nav-link">
-            <Link to="/blog" className="custom-nav-item">Articles</Link>
+            <Link to="/blog" className="custom-nav-item">Blog</Link>
         </li>
         <li  onClick={handleClick} className="custom-nav-link">
             <Link to="/my-works" className="custom-nav-item">Projects</Link>

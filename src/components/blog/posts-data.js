@@ -49,16 +49,17 @@ const getPosts = async () => [
         path: "/blog/usefull-linux-commands",
         title: "Usefull Linux Commands"
     },
+    {
+    	image: "imgs/blog/algolia/algolia.jpeg",
+    	path: "/blog/algolia-with-symfony",
+    	title: "Impelementaion Of algolia Search With symfony 5"
+    },
     /*{
     	image: "http://picsum.photos",
     	path: "/blog/math-for-developers",
     	title: "What are the math concepts  I should know it as a developer ?"
     },
-    {
-    	image: "http://picsum.photos",
-    	path: "/blog/node-express-app",
-    	title: "Hello World Express application using Sequelize ?"
-    },
+    
     {
         image: "",
         path: "",

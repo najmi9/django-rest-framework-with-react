@@ -31,4 +31,13 @@ article.article{
 
 section.main-blog{
     background-color: #353132;
+    overflow: hidden;
+}
+
+.article-image{
+    max-width: 100%;
+}
+
+.article-image-wrapper{
+    text-align: center;
 }
